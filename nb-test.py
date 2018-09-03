@@ -69,10 +69,6 @@ for i in range(0, len(documents)):
             a = table[(word, documentClass)]
             table[(word, documentClass)] += count
 
-print("Done")
-outFile = open("data/word-class-count.txt", "w")
-for x, y in table.items():
-    toWrite = str(x) + ":" + str(y)
-    outFile.write(toWrite)
-    outFile.write('\n')
-# table no contains all the counts we need
+print("Done counting.")
+
+# table now contains the required counts

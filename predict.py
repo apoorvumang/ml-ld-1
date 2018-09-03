@@ -5,11 +5,8 @@ import re
 
 f = open("data/word-class-count.txt", "r")
 table = {}
-c = 0
 # format is like
-# line = "('seventh', 'The_Football_League_players'):2"
-
-
+# line = "seventh,The_Football_League_players,2"
 
 
 
@@ -18,14 +15,10 @@ totalWords = 0
 i = 0
 for line in f.readlines():
     line = line.strip()
-    splitLine = re.split(':', line)
-    part1 = splitLine[0]
-    count = int(splitLine[1])
-    splitParts = re.split(",|\(| |\)|\'", part1)
-    splitParts = filter(None, splitParts)
-    word = splitParts[0]
-    documentClass = splitParts[1]
-
+    splitLine = line.split(',')
+    word = splitLine[0]
+    documentClass = splitLine[1]
+    count = int(splitLine[2])
     table[(word, documentClass)] = count
     totalWords += count
     i += 1

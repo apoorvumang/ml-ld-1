@@ -72,7 +72,7 @@ for i in range(0, len(documents)):
 print("Done")
 outFile = open("data/word-class-count.txt", "w")
 for x, y in table.items():
-    toWrite = str(x) + ":" + str(y)
+    toWrite = x[0] + ',' + x[1] + ',' + str(y)
     outFile.write(toWrite)
     outFile.write('\n')
 # table no contains all the counts we need
