@@ -35,13 +35,13 @@ for line in lines:
 
 c = Counter(wordList)
 
-out1 = open("data/dictionary.txt", "w")
-uniqueWords = list(c)
-uniqueWords.sort()
-
-for word in uniqueWords:
-    out1.write(word)
-    out1.write('\n')
+# out1 = open("data/dictionary.txt", "w")
+# uniqueWords = list(c)
+# uniqueWords.sort()
+#
+# for word in uniqueWords:
+#     out1.write(word)
+#     out1.write('\n')
 
 documentClassesFile = open("data/document-classes.txt", "r")
 classList = []
