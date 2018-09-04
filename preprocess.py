@@ -1,4 +1,5 @@
-import re, string, unicodedata
+import re
+import sys
 import nltk
 import contractions
 import inflect
@@ -16,8 +17,7 @@ nltk.download('punkt')
 nltk.download('stopwords')
 nltk.download('wordnet')
 
-FIRST_LINE_INDEX = 3
-DATA_LINE_INDEX = 4
+FIRST_LINE_INDEX = 0
 
 def strip_html(text):
     soup = BeautifulSoup(text, "html.parser")
@@ -88,7 +88,7 @@ def convert_unicode_to_string(words):
         new_words.append(word.encode('ascii','ignore'))
     return new_words
 
-f = open("data/DBPedia.verysmall/verysmall/verysmall_test.txt")
+f = open("data/DBPedia.full.hdfs/full_test.txt")
 f1 = f.readlines()
 lines = []
 for x in f1:
@@ -109,7 +109,7 @@ documentClassesFile = open("data/document-classes.txt", "w")
 for documentClass in documentClasses:
     documentClassesFile.write(documentClass)
     documentClassesFile.write('\n')
-original = documents[1]
+original = documents[0]
 
 sample = original
 sample = denoise_text(sample)
@@ -126,6 +126,7 @@ print('Stemmed:', stems)
 print(len(stems))
 # print('Lemmatized:', lemmas)
 
+
 totalWordCount = 0
 count = 1
 f = open("data/document-words.txt", "w")
@@ -136,7 +137,7 @@ for document in documents:
     words = normalize(words)
     print("Documents done: ", count)
     count += 1
-    stems = convert_unicode_to_string(lemmatize_verbs(words))
+    stems = convert_unicode_to_string(stem_words(words))
     wordList = ','.join(stems)
     f.write(wordList)
     f.write("\n")

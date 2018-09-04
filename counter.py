@@ -25,16 +25,16 @@ for line in lines:
     f2.write(appendedList)
     f2.write('\n')
 
-
-wordList = []
-for line in lines:
-    words = re.split(',|\n', line)
-    for word in words:
-        if(word):
-            wordList.append(word)
-
-c = Counter(wordList)
-
+#
+# wordList = []
+# for line in lines:
+#     words = re.split(',|\n', line)
+#     for word in words:
+#         if(word):
+#             wordList.append(word)
+#
+# c = Counter(wordList)
+#
 # out1 = open("data/dictionary.txt", "w")
 # uniqueWords = list(c)
 # uniqueWords.sort()
@@ -42,20 +42,27 @@ c = Counter(wordList)
 # for word in uniqueWords:
 #     out1.write(word)
 #     out1.write('\n')
-
-documentClassesFile = open("data/document-classes.txt", "r")
-classList = []
-lines = []
-for line in documentClassesFile.readlines():
-    classes = re.split(',|\n| ', line)
-    for documentClass in classes:
-        if(documentClass):
-            classList.append(documentClass)
-c = Counter(classList)
-out2 = open("data/classes.txt", "w")
-uniqueClasses = list(c)
-uniqueClasses.sort()
-
-for documentClass in uniqueClasses:
-    out2.write(documentClass)
-    out2.write('\n')
+#
+# documentClassesFile = open("data/document-classes.txt", "r")
+# classList = []
+# lines = []
+# for line in documentClassesFile.readlines():
+#     classes = re.split(',|\n| ', line)
+#     for documentClass in classes:
+#         if(documentClass):
+#             classList.append(documentClass)
+# c = Counter(classList)
+# # write class distribution to file
+# f = open("data/class-distribution-count.txt", "w")
+# for x in c.items():
+#     toWrite = x[0] + ',' + str(x[1])
+#     f.write(toWrite)
+#     f.write('\n')
+#
+# out2 = open("data/classes.txt", "w")
+# uniqueClasses = list(c)
+# uniqueClasses.sort()
+#
+# for documentClass in uniqueClasses:
+#     out2.write(documentClass)
+#     out2.write('\n')
