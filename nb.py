@@ -10,7 +10,7 @@ import re
 # of that document (and then add the count to the table)
 
 # first load all documents along with their classes
-documentWordsFile = open("data/words-with-count.txt", "r")
+documentWordsFile = open("data/document-words.txt", "r")
 documentClassesFile = open("data/document-classes.txt", "r")
 
 documents = []

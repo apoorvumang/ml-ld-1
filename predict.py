@@ -3,16 +3,25 @@ import re
 
 # first need to load the class+word counts into memory as a dictionary
 
-f = open("data/word-class-count.txt", "r")
-table = {}
+def file_len(fname):
+    with open(fname) as f:
+        for i, l in enumerate(f):
+            pass
+    return i + 1
+
+
 # format is like
 # line = "seventh,The_Football_League_players,2"
 
-NUM_LINES = 2647000.0
-VOCABULARY_SIZE = 200000
+NUM_LINES = file_len("data/word-class-count.txt")
+VOCABULARY_SIZE = file_len("data/dictionary.txt")
 ALPHA = 0.1
 totalWords = 0
 i = 0
+
+
+f = open("data/word-class-count.txt", "r")
+table = {}
 for line in f.readlines():
     line = line.strip()
     splitLine = line.split(',')
@@ -23,8 +32,7 @@ for line in f.readlines():
     totalWords += count
     i += 1
     if(i%10000 == 0):
-        print((100.0*i)/NUM_LINES)
-# print table[('seventh', 'The_Football_League_players')]
+        print 100.0*(float(i)/NUM_LINES)
 
 f = open("data/classes.txt", "r")
 classesList = []
@@ -49,7 +57,7 @@ for line in f.readlines():
 # lets load the test data
 # this will first 100 documents of train data
 
-f = open("data/words-with-count.txt", "r")
+f = open("data/document-words.txt", "r")
 documents = []
 NUM_DOCUMENTS = 0
 for line in f.readlines():
