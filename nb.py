@@ -10,6 +10,68 @@ import re
 # of that document (and then add the count to the table)
 
 # first load all documents along with their classes
+
+
+# copied from counter.py start
+
+
+f = open("data/document-words.txt", "r")
+
+wordList = []
+for line in f.readlines():
+    line = line.strip()
+    listOfPairs = re.split(',', line)
+    for wordCountPair in listOfPairs:
+        word = re.split(':', wordCountPair)[0]
+        if(word):
+            wordList.append(word)
+
+c = Counter(wordList)
+
+out1 = open("data/dictionary.txt", "w")
+uniqueWords = list(c)
+uniqueWords.sort()
+
+for word in uniqueWords:
+    out1.write(word)
+    out1.write('\n')
+
+f.close()
+out1.close()
+
+documentClassesFile = open("data/document-classes.txt", "r")
+classList = []
+lines = []
+for line in documentClassesFile.readlines():
+    classes = re.split(',|\n| ', line)
+    for documentClass in classes:
+        if(documentClass):
+            classList.append(documentClass)
+c = Counter(classList)
+# write class distribution to file
+f = open("data/class-distribution-count.txt", "w")
+for x in c.items():
+    toWrite = x[0] + ',' + str(x[1])
+    f.write(toWrite)
+    f.write('\n')
+
+documentClassesFile.close()
+f.close()
+
+out2 = open("data/classes.txt", "w")
+uniqueClasses = list(c)
+uniqueClasses.sort()
+
+for documentClass in uniqueClasses:
+    out2.write(documentClass)
+    out2.write('\n')
+out2.close()
+
+print "Part 1 done"
+
+# copied from counter.py end
+
+
 documentWordsFile = open("data/document-words.txt", "r")
 documentClassesFile = open("data/document-classes.txt", "r")
 
@@ -66,7 +128,6 @@ for i in range(0, len(documents)):
         word = wordCountPair[0]
         count = wordCountPair[1]
         for documentClass in classes:
-            a = table[(word, documentClass)]
             table[(word, documentClass)] += count
 
 print("Done")

@@ -55,7 +55,6 @@ for line in f.readlines():
 # now count table, word list and classes list is loaded
 
 # lets load the test data
-# this will first 100 documents of train data
 
 f = open("data/document-words.txt", "r")
 documents = []

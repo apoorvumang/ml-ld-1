@@ -84,7 +84,7 @@ def convert_unicode_to_string(words):
         new_words.append(word.encode('ascii','ignore'))
     return new_words
 
-f = open("data/DBPedia.full.hdfs/full_devel.txt")
+f = open("data/DBPedia.full.hdfs/full_test.txt")
 f1 = f.readlines()
 lines = []
 for x in f1:

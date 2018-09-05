@@ -34,9 +34,28 @@ Local:
 Stemming:
 Training set: 181846/33151 (84.58%) with ALPHA = 0.1 2nd try: 179895/35102(83.67) (ALPHA 0.1)
 Test set: 23883/29997 (79.62%) ALPHA = 0.01, 24045(80.15%) with ALPHA = 0.1 2nd try:  (23950/29997)(79.84)
+3rd try: 24037/29997 (80.13%)
 Devel set: 47392/14105 (77.06%) with ALPHA = 0.1  2nd try: 47053(76.5%)
 
 
 
 Without removing stop words:
 Test set: ALPHA = 0.1 23532 (78.44)
+
+
+Parameters:
+Words: 211577
+Classes: 50
+Smoothing factor (ALPHA): 0.1
+
+
+
+Run time local:
+
+Training:
+Preprocessing 1h 15min 23 sec (214997 documents)
+Counting: 1min 46sec
+
+Prediction:
+Preprocessing: 6min 1sec (29997 documents)
+Prediction: 2min 9sec (29997 documents)
