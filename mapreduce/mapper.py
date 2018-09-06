@@ -6,8 +6,6 @@ import contractions
 import inflect
 from collections import Counter
 from bs4 import BeautifulSoup
-from nltk import word_tokenize, sent_tokenize
-from nltk.corpus import stopwords
 from nltk.stem import LancasterStemmer, WordNetLemmatizer
 
 
@@ -45,15 +43,6 @@ def remove_punctuation(text):
     return text
 
 
-# TODO: somehow stop words removal is taking considerable time if input file is
-#       train (large) but not for smaller files
-def remove_stopwords(words):
-    """Remove stop words from list of tokenized words"""
-    new_words = []
-    for word in words:
-        if word not in stopwords.words('english'):
-            new_words.append(word)
-    return new_words
 
 def stem_words(words):
     """Stem words in list of tokenized words"""
@@ -63,11 +52,6 @@ def stem_words(words):
         stem = stemmer.stem(word)
         stems.append(stem)
     return stems
-
-def normalize(words):
-    words = to_lowercase(words)
-    words = remove_stopwords(words)
-    return words
 
 def convert_unicode_to_string(words):
     new_words = []
@@ -94,8 +78,13 @@ for line in sys.stdin:
     line = line.strip()
     splitLine = line.split('\t', 2)
     document = splitLine[1]
+    classes = splitLine[0]
+    classes = classes.strip()
+    classes = classes.split(',')
     document = denoise_text(document)
-    words = nltk.word_tokenize(document)
+    # words = nltk.word_tokenize(document)
+    words = document.split()
     words = to_lowercase(words)
     for myword in words:
-        print '%s\t%s' % (myword, 1)
+        for myclass in classes:
+            print '%s,%s\t%s' % (myword, myclass, 1)
