@@ -1,1 +1,5 @@
 data/*
+mapreduce/data/*
+mapreduce/data_train/*
+mapreduce/data_test/*
+mapreduce/data_devel/*

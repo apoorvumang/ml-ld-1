@@ -1,0 +1,6 @@
+data
+logs.txt
+mapper.py
+output_dir
+out.txt
+reducer.py

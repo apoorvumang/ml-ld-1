@@ -1,0 +1,1538 @@
+Script started on 2018-09-06 14:26:01+0530
+[1m[7m%[27m[1m[0m                                                                                                                                              [0m[27m[24m[J[44mapoorv@apoorv-Lenovo-Z580[49m [1m[32m~/Desktop/ML on large datasets/ml-ld-1/mapreduce
+[37m % [0m[37m[39m[49m[K[?1h=[?2004hscript output.txt[17Drm -r output_dir [16Dexit            [12Dhadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.0.3.jar -input data -output output_dir -mapper ./mapper.py -reducer ./reducer.py | grep hello[K[K         [?1l>[?2004l
+2018-09-06 14:26:07,504 INFO impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2018-09-06 14:26:07,717 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2018-09-06 14:26:07,717 INFO impl.MetricsSystemImpl: JobTracker metrics system started
+2018-09-06 14:26:07,742 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+2018-09-06 14:26:07,949 INFO mapred.FileInputFormat: Total input files to process : 3
+2018-09-06 14:26:07,975 INFO mapreduce.JobSubmitter: number of splits:6
+2018-09-06 14:26:08,318 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local228067204_0001
+2018-09-06 14:26:08,320 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2018-09-06 14:26:08,524 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+2018-09-06 14:26:08,529 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2018-09-06 14:26:08,531 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapred.FileOutputCommitter
+2018-09-06 14:26:08,567 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:26:08,567 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:26:08,568 INFO mapreduce.Job: Running job: job_local228067204_0001
+2018-09-06 14:26:08,650 INFO mapred.LocalJobRunner: Waiting for map tasks
+2018-09-06 14:26:08,659 INFO mapred.LocalJobRunner: Starting task: attempt_local228067204_0001_m_000000_0
+2018-09-06 14:26:08,755 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:26:08,755 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:26:08,808 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-09-06 14:26:08,825 INFO mapred.MapTask: Processing split: file:/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/data/full_train.txt:0+33554432
+2018-09-06 14:26:08,841 INFO mapred.MapTask: numReduceTasks: 1
+2018-09-06 14:26:08,923 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-09-06 14:26:08,923 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-09-06 14:26:08,923 INFO mapred.MapTask: soft limit at 83886080
+2018-09-06 14:26:08,923 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-09-06 14:26:08,923 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-09-06 14:26:08,929 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-09-06 14:26:08,953 INFO streaming.PipeMapRed: PipeMapRed exec [/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/././mapper.py]
+2018-09-06 14:26:08,973 INFO Configuration.deprecation: mapred.work.output.dir is deprecated. Instead, use mapreduce.task.output.dir
+2018-09-06 14:26:08,982 INFO Configuration.deprecation: map.input.start is deprecated. Instead, use mapreduce.map.input.start
+2018-09-06 14:26:08,982 INFO Configuration.deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+2018-09-06 14:26:08,983 INFO Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2018-09-06 14:26:08,983 INFO Configuration.deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+2018-09-06 14:26:08,984 INFO Configuration.deprecation: mapred.local.dir is deprecated. Instead, use mapreduce.cluster.local.dir
+2018-09-06 14:26:08,984 INFO Configuration.deprecation: map.input.file is deprecated. Instead, use mapreduce.map.input.file
+2018-09-06 14:26:08,985 INFO Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2018-09-06 14:26:08,985 INFO Configuration.deprecation: map.input.length is deprecated. Instead, use mapreduce.map.input.length
+2018-09-06 14:26:08,986 INFO Configuration.deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+2018-09-06 14:26:08,986 INFO Configuration.deprecation: user.name is deprecated. Instead, use mapreduce.job.user.name
+2018-09-06 14:26:08,986 INFO Configuration.deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2018-09-06 14:26:09,031 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:09,034 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:09,050 INFO streaming.PipeMapRed: Records R/W=78/1
+2018-09-06 14:26:09,075 INFO streaming.PipeMapRed: R/W/S=100/689/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:09,379 INFO streaming.PipeMapRed: R/W/S=1000/198668/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:09,576 INFO mapreduce.Job: Job job_local228067204_0001 running in uber mode : false
+2018-09-06 14:26:09,577 INFO mapreduce.Job:  map 0% reduce 0%
+2018-09-06 14:26:10,225 INFO streaming.PipeMapRed: R/W/S=10000/1488102/0 in:10000=10000/1 [rec/s] out:1488102=1488102/1 [rec/s]
+2018-09-06 14:26:11,321 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:26:11,321 INFO mapred.MapTask: bufstart = 0; bufend = 30309446; bufvoid = 104857600
+2018-09-06 14:26:11,321 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 12820244(51280976); length = 13394153/6553600
+2018-09-06 14:26:11,322 INFO mapred.MapTask: (EQUATOR) 40795203 kvi 10198796(40795184)
+2018-09-06 14:26:16,158 INFO mapred.MapTask: Finished spill 0
+2018-09-06 14:26:16,158 INFO mapred.MapTask: (RESET) equator 40795203 kv 10198796(40795184) kvi 7577368(30309472)
+2018-09-06 14:26:16,769 INFO streaming.PipeMapRed: MRErrorThread done
+2018-09-06 14:26:16,770 INFO streaming.PipeMapRed: mapRedFinished
+2018-09-06 14:26:16,773 INFO mapred.LocalJobRunner: 
+2018-09-06 14:26:16,774 INFO mapred.MapTask: Starting flush of map output
+2018-09-06 14:26:16,774 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:26:16,774 INFO mapred.MapTask: bufstart = 40795203; bufend = 53429811; bufvoid = 104857600
+2018-09-06 14:26:16,774 INFO mapred.MapTask: kvstart = 10198796(40795184); kvend = 4700776(18803104); length = 5498021/6553600
+2018-09-06 14:26:18,755 INFO mapred.MapTask: Finished spill 1
+2018-09-06 14:26:18,761 INFO mapred.Merger: Merging 2 sorted segments
+2018-09-06 14:26:18,768 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 52390204 bytes
+2018-09-06 14:26:20,773 INFO mapred.LocalJobRunner: Records R/W=78/1 > sort > 
+2018-09-06 14:26:21,587 INFO mapreduce.Job:  map 15% reduce 0%
+2018-09-06 14:26:22,021 INFO mapred.Task: Task:attempt_local228067204_0001_m_000000_0 is done. And is in the process of committing
+2018-09-06 14:26:22,022 INFO mapred.LocalJobRunner: Records R/W=78/1 > sort
+2018-09-06 14:26:22,022 INFO mapred.Task: Task 'attempt_local228067204_0001_m_000000_0' done.
+2018-09-06 14:26:22,028 INFO mapred.Task: Final Counters for attempt_local228067204_0001_m_000000_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=86125728
+		FILE: Number of bytes written=105427541
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=40215
+		Map output records=4723045
+		Map output bytes=42944054
+		Map output materialized bytes=52390212
+		Input split bytes=136
+		Combine input records=0
+		Spilled Records=9446090
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=104
+		Total committed heap usage (bytes)=262144000
+	File Input Format Counters 
+		Bytes Read=33558528
+2018-09-06 14:26:22,029 INFO mapred.LocalJobRunner: Finishing task: attempt_local228067204_0001_m_000000_0
+2018-09-06 14:26:22,030 INFO mapred.LocalJobRunner: Starting task: attempt_local228067204_0001_m_000001_0
+2018-09-06 14:26:22,033 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:26:22,033 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:26:22,034 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-09-06 14:26:22,037 INFO mapred.MapTask: Processing split: file:/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/data/full_train.txt:33554432+33554432
+2018-09-06 14:26:22,039 INFO mapred.MapTask: numReduceTasks: 1
+2018-09-06 14:26:22,055 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-09-06 14:26:22,055 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-09-06 14:26:22,055 INFO mapred.MapTask: soft limit at 83886080
+2018-09-06 14:26:22,055 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-09-06 14:26:22,055 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-09-06 14:26:22,056 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-09-06 14:26:22,064 INFO streaming.PipeMapRed: PipeMapRed exec [/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/././mapper.py]
+2018-09-06 14:26:22,103 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:22,103 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:22,104 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:22,128 INFO streaming.PipeMapRed: Records R/W=189/1
+2018-09-06 14:26:22,201 INFO streaming.PipeMapRed: R/W/S=1000/80499/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:22,588 INFO mapreduce.Job:  map 100% reduce 0%
+2018-09-06 14:26:22,802 INFO streaming.PipeMapRed: R/W/S=10000/1023058/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:24,271 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:26:24,271 INFO mapred.MapTask: bufstart = 0; bufend = 30704938; bufvoid = 104857600
+2018-09-06 14:26:24,271 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 12919116(51676464); length = 13295281/6553600
+2018-09-06 14:26:24,271 INFO mapred.MapTask: (EQUATOR) 41190693 kvi 10297668(41190672)
+2018-09-06 14:26:28,279 INFO mapred.MapTask: Finished spill 0
+2018-09-06 14:26:28,279 INFO mapred.MapTask: (RESET) equator 41190693 kv 10297668(41190672) kvi 7676240(30704960)
+2018-09-06 14:26:28,658 INFO streaming.PipeMapRed: MRErrorThread done
+2018-09-06 14:26:28,658 INFO streaming.PipeMapRed: mapRedFinished
+2018-09-06 14:26:28,659 INFO mapred.LocalJobRunner: 
+2018-09-06 14:26:28,659 INFO mapred.MapTask: Starting flush of map output
+2018-09-06 14:26:28,659 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:26:28,659 INFO mapred.MapTask: bufstart = 41190693; bufend = 53174951; bufvoid = 104857600
+2018-09-06 14:26:28,659 INFO mapred.MapTask: kvstart = 10297668(41190672); kvend = 5177400(20709600); length = 5120269/6553600
+2018-09-06 14:26:29,592 INFO mapreduce.Job:  map 17% reduce 0%
+2018-09-06 14:26:30,075 INFO mapred.MapTask: Finished spill 1
+2018-09-06 14:26:30,077 INFO mapred.Merger: Merging 2 sorted segments
+2018-09-06 14:26:30,078 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 51896989 bytes
+2018-09-06 14:26:32,816 INFO mapred.Task: Task:attempt_local228067204_0001_m_000001_0 is done. And is in the process of committing
+2018-09-06 14:26:32,818 INFO mapred.LocalJobRunner: Records R/W=189/1 > sort
+2018-09-06 14:26:32,818 INFO mapred.Task: Task 'attempt_local228067204_0001_m_000001_0' done.
+2018-09-06 14:26:32,819 INFO mapred.Task: Final Counters for attempt_local228067204_0001_m_000001_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=171582095
+		FILE: Number of bytes written=209221569
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=48197
+		Map output records=4603889
+		Map output bytes=42689196
+		Map output materialized bytes=51896995
+		Input split bytes=136
+		Combine input records=0
+		Spilled Records=9207778
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=40
+		Total committed heap usage (bytes)=262144000
+	File Input Format Counters 
+		Bytes Read=33558528
+2018-09-06 14:26:32,819 INFO mapred.LocalJobRunner: Finishing task: attempt_local228067204_0001_m_000001_0
+2018-09-06 14:26:32,819 INFO mapred.LocalJobRunner: Starting task: attempt_local228067204_0001_m_000002_0
+2018-09-06 14:26:32,822 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:26:32,822 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:26:32,822 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-09-06 14:26:32,826 INFO mapred.MapTask: Processing split: file:/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/data/full_train.txt:67108864+33554432
+2018-09-06 14:26:32,830 INFO mapred.MapTask: numReduceTasks: 1
+2018-09-06 14:26:32,839 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-09-06 14:26:32,839 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-09-06 14:26:32,839 INFO mapred.MapTask: soft limit at 83886080
+2018-09-06 14:26:32,839 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-09-06 14:26:32,839 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-09-06 14:26:32,840 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-09-06 14:26:32,854 INFO streaming.PipeMapRed: PipeMapRed exec [/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/././mapper.py]
+2018-09-06 14:26:32,885 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:32,885 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:32,886 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:32,891 INFO streaming.PipeMapRed: Records R/W=176/1
+2018-09-06 14:26:32,957 INFO streaming.PipeMapRed: R/W/S=1000/79851/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:33,450 INFO streaming.PipeMapRed: R/W/S=10000/813396/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:33,594 INFO mapreduce.Job:  map 100% reduce 0%
+2018-09-06 14:26:35,038 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:26:35,038 INFO mapred.MapTask: bufstart = 0; bufend = 31974295; bufvoid = 104857600
+2018-09-06 14:26:35,038 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 13236452(52945808); length = 12977945/6553600
+2018-09-06 14:26:35,038 INFO mapred.MapTask: (EQUATOR) 42460043 kvi 10615004(42460016)
+2018-09-06 14:26:38,869 INFO mapred.MapTask: Finished spill 0
+2018-09-06 14:26:38,869 INFO mapred.MapTask: (RESET) equator 42460043 kv 10615004(42460016) kvi 7993580(31974320)
+2018-09-06 14:26:39,110 INFO streaming.PipeMapRed: MRErrorThread done
+2018-09-06 14:26:39,110 INFO streaming.PipeMapRed: mapRedFinished
+2018-09-06 14:26:39,111 INFO mapred.LocalJobRunner: 
+2018-09-06 14:26:39,111 INFO mapred.MapTask: Starting flush of map output
+2018-09-06 14:26:39,111 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:26:39,111 INFO mapred.MapTask: bufstart = 42460043; bufend = 52524070; bufvoid = 104857600
+2018-09-06 14:26:39,111 INFO mapred.MapTask: kvstart = 10615004(42460016); kvend = 6449784(25799136); length = 4165221/6553600
+2018-09-06 14:26:39,597 INFO mapreduce.Job:  map 33% reduce 0%
+2018-09-06 14:26:40,276 INFO mapred.MapTask: Finished spill 1
+2018-09-06 14:26:40,278 INFO mapred.Merger: Merging 2 sorted segments
+2018-09-06 14:26:40,278 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 50609922 bytes
+2018-09-06 14:26:42,649 INFO mapred.Task: Task:attempt_local228067204_0001_m_000002_0 is done. And is in the process of committing
+2018-09-06 14:26:42,653 INFO mapred.LocalJobRunner: Records R/W=176/1 > sort
+2018-09-06 14:26:42,654 INFO mapred.Task: Task 'attempt_local228067204_0001_m_000002_0' done.
+2018-09-06 14:26:42,657 INFO mapred.Task: Final Counters for attempt_local228067204_0001_m_000002_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=255751392
+		FILE: Number of bytes written=310441457
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=67301
+		Map output records=4285793
+		Map output bytes=42038322
+		Map output materialized bytes=50609925
+		Input split bytes=136
+		Combine input records=0
+		Spilled Records=8571586
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=10
+		Total committed heap usage (bytes)=263192576
+	File Input Format Counters 
+		Bytes Read=33558528
+2018-09-06 14:26:42,657 INFO mapred.LocalJobRunner: Finishing task: attempt_local228067204_0001_m_000002_0
+2018-09-06 14:26:42,657 INFO mapred.LocalJobRunner: Starting task: attempt_local228067204_0001_m_000003_0
+2018-09-06 14:26:42,659 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:26:42,660 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:26:42,660 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-09-06 14:26:42,664 INFO mapred.MapTask: Processing split: file:/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/data/full_train.txt:100663296+30619299
+2018-09-06 14:26:42,666 INFO mapred.MapTask: numReduceTasks: 1
+2018-09-06 14:26:42,676 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-09-06 14:26:42,676 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-09-06 14:26:42,676 INFO mapred.MapTask: soft limit at 83886080
+2018-09-06 14:26:42,676 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-09-06 14:26:42,676 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-09-06 14:26:42,682 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-09-06 14:26:42,689 INFO streaming.PipeMapRed: PipeMapRed exec [/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/././mapper.py]
+2018-09-06 14:26:42,707 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:42,707 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:42,708 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:42,721 INFO streaming.PipeMapRed: Records R/W=286/1
+2018-09-06 14:26:42,767 INFO streaming.PipeMapRed: R/W/S=1000/58425/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:43,197 INFO streaming.PipeMapRed: R/W/S=10000/730603/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:43,600 INFO mapreduce.Job:  map 100% reduce 0%
+2018-09-06 14:26:44,809 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:26:44,810 INFO mapred.MapTask: bufstart = 0; bufend = 32275735; bufvoid = 104857600
+2018-09-06 14:26:44,810 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 13311812(53247248); length = 12902585/6553600
+2018-09-06 14:26:44,810 INFO mapred.MapTask: (EQUATOR) 42761483 kvi 10690364(42761456)
+2018-09-06 14:26:45,249 INFO streaming.PipeMapRed: MRErrorThread done
+2018-09-06 14:26:45,250 INFO streaming.PipeMapRed: mapRedFinished
+2018-09-06 14:26:45,250 INFO mapred.LocalJobRunner: 
+2018-09-06 14:26:45,250 INFO mapred.MapTask: Starting flush of map output
+2018-09-06 14:26:45,601 INFO mapreduce.Job:  map 50% reduce 0%
+2018-09-06 14:26:48,686 INFO mapred.MapTask: Finished spill 0
+2018-09-06 14:26:48,686 INFO mapred.MapTask: (RESET) equator 42761483 kv 10690364(42761456) kvi 8283596(33134384)
+2018-09-06 14:26:48,687 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:26:48,687 INFO mapred.MapTask: bufstart = 42761483; bufend = 48682067; bufvoid = 104857600
+2018-09-06 14:26:48,687 INFO mapred.MapTask: kvstart = 10690364(42761456); kvend = 8283600(33134400); length = 2406765/6553600
+2018-09-06 14:26:49,324 INFO mapred.MapTask: Finished spill 1
+2018-09-06 14:26:49,326 INFO mapred.Merger: Merging 2 sorted segments
+2018-09-06 14:26:49,326 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 45851008 bytes
+2018-09-06 14:26:51,478 INFO mapred.Task: Task:attempt_local228067204_0001_m_000003_0 is done. And is in the process of committing
+2018-09-06 14:26:51,479 INFO mapred.LocalJobRunner: Records R/W=286/1 > sort
+2018-09-06 14:26:51,479 INFO mapred.Task: Task 'attempt_local228067204_0001_m_000003_0' done.
+2018-09-06 14:26:51,480 INFO mapred.Task: Final Counters for attempt_local228067204_0001_m_000003_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=332222545
+		FILE: Number of bytes written=402143515
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=59284
+		Map output records=3827339
+		Map output bytes=38196319
+		Map output materialized bytes=45851010
+		Input split bytes=136
+		Combine input records=0
+		Spilled Records=7654678
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=8
+		Total committed heap usage (bytes)=264241152
+	File Input Format Counters 
+		Bytes Read=30619299
+2018-09-06 14:26:51,480 INFO mapred.LocalJobRunner: Finishing task: attempt_local228067204_0001_m_000003_0
+2018-09-06 14:26:51,480 INFO mapred.LocalJobRunner: Starting task: attempt_local228067204_0001_m_000004_0
+2018-09-06 14:26:51,482 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:26:51,482 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:26:51,482 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-09-06 14:26:51,484 INFO mapred.MapTask: Processing split: file:/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/data/full_devel.txt:0+28362981
+2018-09-06 14:26:51,485 INFO mapred.MapTask: numReduceTasks: 1
+2018-09-06 14:26:51,496 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-09-06 14:26:51,496 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-09-06 14:26:51,496 INFO mapred.MapTask: soft limit at 83886080
+2018-09-06 14:26:51,496 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-09-06 14:26:51,496 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-09-06 14:26:51,497 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-09-06 14:26:51,514 INFO streaming.PipeMapRed: PipeMapRed exec [/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/././mapper.py]
+2018-09-06 14:26:51,538 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:51,538 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:51,538 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:51,553 INFO streaming.PipeMapRed: Records R/W=249/1
+2018-09-06 14:26:51,588 INFO streaming.PipeMapRed: R/W/S=1000/56946/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:51,604 INFO mapreduce.Job:  map 100% reduce 0%
+2018-09-06 14:26:52,033 INFO streaming.PipeMapRed: R/W/S=10000/681980/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:53,651 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:26:53,651 INFO mapred.MapTask: bufstart = 0; bufend = 32363041; bufvoid = 104857600
+2018-09-06 14:26:53,651 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 13333640(53334560); length = 12880757/6553600
+2018-09-06 14:26:53,651 INFO mapred.MapTask: (EQUATOR) 42848792 kvi 10712192(42848768)
+2018-09-06 14:26:53,846 INFO streaming.PipeMapRed: MRErrorThread done
+2018-09-06 14:26:53,846 INFO streaming.PipeMapRed: mapRedFinished
+2018-09-06 14:26:53,847 INFO mapred.LocalJobRunner: 
+2018-09-06 14:26:53,847 INFO mapred.MapTask: Starting flush of map output
+2018-09-06 14:26:54,606 INFO mapreduce.Job:  map 67% reduce 0%
+2018-09-06 14:26:57,517 INFO mapred.MapTask: Finished spill 0
+2018-09-06 14:26:57,517 INFO mapred.MapTask: (RESET) equator 42848792 kv 10712192(42848768) kvi 9549296(38197184)
+2018-09-06 14:26:57,517 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:26:57,518 INFO mapred.MapTask: bufstart = 42848792; bufend = 45792080; bufvoid = 104857600
+2018-09-06 14:26:57,518 INFO mapred.MapTask: kvstart = 10712192(42848768); kvend = 9549300(38197200); length = 1162893/6553600
+2018-09-06 14:26:57,807 INFO mapred.MapTask: Finished spill 1
+2018-09-06 14:26:57,808 INFO mapred.Merger: Merging 2 sorted segments
+2018-09-06 14:26:57,808 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 42328166 bytes
+2018-09-06 14:26:59,743 INFO mapred.Task: Task:attempt_local228067204_0001_m_000004_0 is done. And is in the process of committing
+2018-09-06 14:26:59,744 INFO mapred.LocalJobRunner: Records R/W=249/1 > sort
+2018-09-06 14:26:59,744 INFO mapred.Task: Task 'attempt_local228067204_0001_m_000004_0' done.
+2018-09-06 14:26:59,745 INFO mapred.Task: Final Counters for attempt_local228067204_0001_m_000004_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=402914037
+		FILE: Number of bytes written=486799911
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=61497
+		Map output records=3510914
+		Map output bytes=35306329
+		Map output materialized bytes=42328179
+		Input split bytes=136
+		Combine input records=0
+		Spilled Records=7021828
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=7
+		Total committed heap usage (bytes)=265289728
+	File Input Format Counters 
+		Bytes Read=28362981
+2018-09-06 14:26:59,745 INFO mapred.LocalJobRunner: Finishing task: attempt_local228067204_0001_m_000004_0
+2018-09-06 14:26:59,745 INFO mapred.LocalJobRunner: Starting task: attempt_local228067204_0001_m_000005_0
+2018-09-06 14:26:59,749 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:26:59,749 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:26:59,749 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-09-06 14:26:59,751 INFO mapred.MapTask: Processing split: file:/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/data/full_test.txt:0+12483163
+2018-09-06 14:26:59,753 INFO mapred.MapTask: numReduceTasks: 1
+2018-09-06 14:26:59,763 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-09-06 14:26:59,763 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-09-06 14:26:59,764 INFO mapred.MapTask: soft limit at 83886080
+2018-09-06 14:26:59,764 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-09-06 14:26:59,764 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-09-06 14:26:59,764 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-09-06 14:26:59,775 INFO streaming.PipeMapRed: PipeMapRed exec [/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/././mapper.py]
+2018-09-06 14:26:59,811 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:59,811 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:59,812 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:26:59,823 INFO streaming.PipeMapRed: Records R/W=305/1
+2018-09-06 14:26:59,861 INFO streaming.PipeMapRed: R/W/S=1000/38019/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:27:00,148 INFO streaming.PipeMapRed: R/W/S=10000/474000/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:27:00,609 INFO mapreduce.Job:  map 100% reduce 0%
+2018-09-06 14:27:00,807 INFO streaming.PipeMapRed: MRErrorThread done
+2018-09-06 14:27:00,807 INFO streaming.PipeMapRed: mapRedFinished
+2018-09-06 14:27:00,808 INFO mapred.LocalJobRunner: 
+2018-09-06 14:27:00,808 INFO mapred.MapTask: Starting flush of map output
+2018-09-06 14:27:00,808 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:27:00,808 INFO mapred.MapTask: bufstart = 0; bufend = 15473587; bufvoid = 104857600
+2018-09-06 14:27:00,808 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 20162176(80648704); length = 6052221/6553600
+2018-09-06 14:27:01,609 INFO mapreduce.Job:  map 83% reduce 0%
+2018-09-06 14:27:02,469 INFO mapred.MapTask: Finished spill 0
+2018-09-06 14:27:02,470 INFO mapred.Task: Task:attempt_local228067204_0001_m_000005_0 is done. And is in the process of committing
+2018-09-06 14:27:02,472 INFO mapred.LocalJobRunner: Records R/W=305/1
+2018-09-06 14:27:02,472 INFO mapred.Task: Task 'attempt_local228067204_0001_m_000005_0' done.
+2018-09-06 14:27:02,472 INFO mapred.Task: Final Counters for attempt_local228067204_0001_m_000005_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=415397526
+		FILE: Number of bytes written=505299654
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=29997
+		Map output records=1513056
+		Map output bytes=15473587
+		Map output materialized bytes=18499711
+		Input split bytes=135
+		Combine input records=0
+		Spilled Records=1513056
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=1
+		Total committed heap usage (bytes)=265289728
+	File Input Format Counters 
+		Bytes Read=12483163
+2018-09-06 14:27:02,472 INFO mapred.LocalJobRunner: Finishing task: attempt_local228067204_0001_m_000005_0
+2018-09-06 14:27:02,473 INFO mapred.LocalJobRunner: map task executor complete.
+2018-09-06 14:27:02,476 INFO mapred.LocalJobRunner: Waiting for reduce tasks
+2018-09-06 14:27:02,476 INFO mapred.LocalJobRunner: Starting task: attempt_local228067204_0001_r_000000_0
+2018-09-06 14:27:02,486 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:27:02,486 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:27:02,486 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-09-06 14:27:02,489 INFO mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@129d6ad9
+2018-09-06 14:27:02,490 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+2018-09-06 14:27:02,514 INFO reduce.MergeManagerImpl: MergerManager: memoryLimit=1440114304, maxSingleShuffleLimit=360028576, mergeThreshold=950475456, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2018-09-06 14:27:02,517 INFO reduce.EventFetcher: attempt_local228067204_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2018-09-06 14:27:02,573 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local228067204_0001_m_000000_0 decomp: 52390208 len: 52390212 to MEMORY
+2018-09-06 14:27:02,610 INFO mapreduce.Job:  map 100% reduce 0%
+2018-09-06 14:27:02,661 INFO reduce.InMemoryMapOutput: Read 52390208 bytes from map-output for attempt_local228067204_0001_m_000000_0
+2018-09-06 14:27:02,663 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 52390208, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->52390208
+2018-09-06 14:27:02,670 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local228067204_0001_m_000003_0 decomp: 45851006 len: 45851010 to MEMORY
+2018-09-06 14:27:02,734 INFO reduce.InMemoryMapOutput: Read 45851006 bytes from map-output for attempt_local228067204_0001_m_000003_0
+2018-09-06 14:27:02,734 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 45851006, inMemoryMapOutputs.size() -> 2, commitMemory -> 52390208, usedMemory ->98241214
+2018-09-06 14:27:02,744 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local228067204_0001_m_000002_0 decomp: 50609921 len: 50609925 to MEMORY
+2018-09-06 14:27:02,820 INFO reduce.InMemoryMapOutput: Read 50609921 bytes from map-output for attempt_local228067204_0001_m_000002_0
+2018-09-06 14:27:02,820 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 50609921, inMemoryMapOutputs.size() -> 3, commitMemory -> 98241214, usedMemory ->148851135
+2018-09-06 14:27:02,825 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local228067204_0001_m_000005_0 decomp: 18499707 len: 18499711 to MEMORY
+2018-09-06 14:27:02,850 INFO reduce.InMemoryMapOutput: Read 18499707 bytes from map-output for attempt_local228067204_0001_m_000005_0
+2018-09-06 14:27:02,850 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 18499707, inMemoryMapOutputs.size() -> 4, commitMemory -> 148851135, usedMemory ->167350842
+2018-09-06 14:27:02,855 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local228067204_0001_m_000004_0 decomp: 42328175 len: 42328179 to MEMORY
+2018-09-06 14:27:02,915 INFO reduce.InMemoryMapOutput: Read 42328175 bytes from map-output for attempt_local228067204_0001_m_000004_0
+2018-09-06 14:27:02,915 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 42328175, inMemoryMapOutputs.size() -> 5, commitMemory -> 167350842, usedMemory ->209679017
+2018-09-06 14:27:02,958 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local228067204_0001_m_000001_0 decomp: 51896991 len: 51896995 to MEMORY
+2018-09-06 14:27:03,019 INFO reduce.InMemoryMapOutput: Read 51896991 bytes from map-output for attempt_local228067204_0001_m_000001_0
+2018-09-06 14:27:03,019 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 51896991, inMemoryMapOutputs.size() -> 6, commitMemory -> 209679017, usedMemory ->261576008
+2018-09-06 14:27:03,019 INFO reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2018-09-06 14:27:03,020 INFO mapred.LocalJobRunner: 6 / 6 copied.
+2018-09-06 14:27:03,021 INFO reduce.MergeManagerImpl: finalMerge called with 6 in-memory map-outputs and 0 on-disk map-outputs
+2018-09-06 14:27:03,023 INFO mapred.Merger: Merging 6 sorted segments
+2018-09-06 14:27:03,024 INFO mapred.Merger: Down to the last merge-pass, with 6 segments left of total size: 261575976 bytes
+2018-09-06 14:27:12,531 INFO reduce.MergeManagerImpl: Merged 6 segments, 261576008 bytes to disk to satisfy reduce memory limit
+2018-09-06 14:27:12,531 INFO reduce.MergeManagerImpl: Merging 1 files, 261576002 bytes from disk
+2018-09-06 14:27:12,532 INFO reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2018-09-06 14:27:12,532 INFO mapred.Merger: Merging 1 sorted segments
+2018-09-06 14:27:12,533 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 261575994 bytes
+2018-09-06 14:27:12,533 INFO mapred.LocalJobRunner: 6 / 6 copied.
+2018-09-06 14:27:12,538 INFO streaming.PipeMapRed: PipeMapRed exec [/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/././reducer.py]
+2018-09-06 14:27:12,542 INFO Configuration.deprecation: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2018-09-06 14:27:12,543 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2018-09-06 14:27:12,567 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:27:12,567 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:27:12,569 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:27:12,579 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:27:12,611 INFO streaming.PipeMapRed: R/W/S=10000/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:27:12,639 INFO streaming.PipeMapRed: Records R/W=15199/1
+2018-09-06 14:27:12,943 INFO streaming.PipeMapRed: R/W/S=100000/29682/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:27:13,157 INFO streaming.PipeMapRed: R/W/S=200000/49961/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:27:13,331 INFO streaming.PipeMapRed: R/W/S=300000/67080/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:27:13,531 INFO streaming.PipeMapRed: R/W/S=400000/94097/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:27:13,704 INFO streaming.PipeMapRed: R/W/S=500000/111488/0 in:500000=500000/1 [rec/s] out:111488=111488/1 [rec/s]
+2018-09-06 14:27:13,859 INFO streaming.PipeMapRed: R/W/S=600000/122855/0 in:600000=600000/1 [rec/s] out:122855=122855/1 [rec/s]
+2018-09-06 14:27:14,004 INFO streaming.PipeMapRed: R/W/S=700000/127830/0 in:700000=700000/1 [rec/s] out:127830=127830/1 [rec/s]
+2018-09-06 14:27:14,145 INFO streaming.PipeMapRed: R/W/S=800000/127830/0 in:800000=800000/1 [rec/s] out:127830=127830/1 [rec/s]
+2018-09-06 14:27:14,288 INFO streaming.PipeMapRed: R/W/S=900000/127830/0 in:900000=900000/1 [rec/s] out:127830=127830/1 [rec/s]
+2018-09-06 14:27:14,422 INFO streaming.PipeMapRed: R/W/S=1000000/128271/0 in:1000000=1000000/1 [rec/s] out:128271=128271/1 [rec/s]
+2018-09-06 14:27:14,488 INFO mapred.LocalJobRunner: Records R/W=15199/1 > reduce
+2018-09-06 14:27:14,587 INFO streaming.PipeMapRed: R/W/S=1100000/136498/0 in:550000=1100000/2 [rec/s] out:68249=136498/2 [rec/s]
+2018-09-06 14:27:14,616 INFO mapreduce.Job:  map 100% reduce 68%
+2018-09-06 14:27:14,766 INFO streaming.PipeMapRed: R/W/S=1200000/143686/0 in:600000=1200000/2 [rec/s] out:71843=143686/2 [rec/s]
+2018-09-06 14:27:14,911 INFO streaming.PipeMapRed: R/W/S=1300000/147447/0 in:650000=1300000/2 [rec/s] out:73723=147447/2 [rec/s]
+2018-09-06 14:27:15,068 INFO streaming.PipeMapRed: R/W/S=1400000/150870/0 in:700000=1400000/2 [rec/s] out:75435=150870/2 [rec/s]
+2018-09-06 14:27:15,226 INFO streaming.PipeMapRed: R/W/S=1500000/154040/0 in:750000=1500000/2 [rec/s] out:77020=154040/2 [rec/s]
+2018-09-06 14:27:15,391 INFO streaming.PipeMapRed: R/W/S=1600000/156334/0 in:800000=1600000/2 [rec/s] out:78167=156334/2 [rec/s]
+2018-09-06 14:27:15,562 INFO streaming.PipeMapRed: R/W/S=1700000/159919/0 in:566666=1700000/3 [rec/s] out:53306=159919/3 [rec/s]
+2018-09-06 14:27:15,712 INFO streaming.PipeMapRed: R/W/S=1800000/164961/0 in:600000=1800000/3 [rec/s] out:54987=164961/3 [rec/s]
+2018-09-06 14:27:15,846 INFO streaming.PipeMapRed: R/W/S=1900000/167537/0 in:633333=1900000/3 [rec/s] out:55845=167537/3 [rec/s]
+2018-09-06 14:27:16,018 INFO streaming.PipeMapRed: R/W/S=2000000/172601/0 in:666666=2000000/3 [rec/s] out:57533=172601/3 [rec/s]
+2018-09-06 14:27:16,200 INFO streaming.PipeMapRed: R/W/S=2100000/181872/0 in:700000=2100000/3 [rec/s] out:60624=181872/3 [rec/s]
+2018-09-06 14:27:16,367 INFO streaming.PipeMapRed: R/W/S=2200000/181872/0 in:733333=2200000/3 [rec/s] out:60624=181872/3 [rec/s]
+2018-09-06 14:27:16,534 INFO streaming.PipeMapRed: R/W/S=2300000/181872/0 in:766666=2300000/3 [rec/s] out:60624=181872/3 [rec/s]
+2018-09-06 14:27:16,711 INFO streaming.PipeMapRed: R/W/S=2400000/188264/0 in:600000=2400000/4 [rec/s] out:47067=188271/4 [rec/s]
+2018-09-06 14:27:17,010 INFO streaming.PipeMapRed: R/W/S=2500000/286983/0 in:625000=2500000/4 [rec/s] out:71745=286983/4 [rec/s]
+2018-09-06 14:27:17,315 INFO streaming.PipeMapRed: R/W/S=2600000/386914/0 in:650000=2600000/4 [rec/s] out:96728=386914/4 [rec/s]
+2018-09-06 14:27:17,614 INFO streaming.PipeMapRed: R/W/S=2700000/487371/0 in:540000=2700000/5 [rec/s] out:97475=487377/5 [rec/s]
+2018-09-06 14:27:17,770 INFO streaming.PipeMapRed: R/W/S=2800000/495481/0 in:560000=2800000/5 [rec/s] out:99096=495481/5 [rec/s]
+2018-09-06 14:27:17,939 INFO streaming.PipeMapRed: R/W/S=2900000/503671/0 in:580000=2900000/5 [rec/s] out:100734=503671/5 [rec/s]
+2018-09-06 14:27:18,109 INFO streaming.PipeMapRed: R/W/S=3000000/504234/0 in:600000=3000000/5 [rec/s] out:100846=504234/5 [rec/s]
+2018-09-06 14:27:18,262 INFO streaming.PipeMapRed: R/W/S=3100000/509528/0 in:620000=3100000/5 [rec/s] out:101905=509528/5 [rec/s]
+2018-09-06 14:27:18,443 INFO streaming.PipeMapRed: R/W/S=3200000/515477/0 in:640000=3200000/5 [rec/s] out:103095=515477/5 [rec/s]
+2018-09-06 14:27:18,588 INFO streaming.PipeMapRed: R/W/S=3300000/517991/0 in:550000=3300000/6 [rec/s] out:86331=517991/6 [rec/s]
+2018-09-06 14:27:18,762 INFO streaming.PipeMapRed: R/W/S=3400000/528631/0 in:566666=3400000/6 [rec/s] out:88106=528639/6 [rec/s]
+2018-09-06 14:27:18,915 INFO streaming.PipeMapRed: R/W/S=3500000/539389/0 in:583333=3500000/6 [rec/s] out:89898=539389/6 [rec/s]
+2018-09-06 14:27:19,092 INFO streaming.PipeMapRed: R/W/S=3600000/551020/0 in:600000=3600000/6 [rec/s] out:91836=551020/6 [rec/s]
+2018-09-06 14:27:19,260 INFO streaming.PipeMapRed: R/W/S=3700000/559083/0 in:616666=3700000/6 [rec/s] out:93180=559083/6 [rec/s]
+2018-09-06 14:27:19,438 INFO streaming.PipeMapRed: R/W/S=3800000/570140/0 in:633333=3800000/6 [rec/s] out:95023=570140/6 [rec/s]
+2018-09-06 14:27:19,597 INFO streaming.PipeMapRed: R/W/S=3900000/580292/0 in:557142=3900000/7 [rec/s] out:82898=580292/7 [rec/s]
+2018-09-06 14:27:19,759 INFO streaming.PipeMapRed: R/W/S=4000000/587526/0 in:571428=4000000/7 [rec/s] out:83932=587526/7 [rec/s]
+2018-09-06 14:27:19,915 INFO streaming.PipeMapRed: R/W/S=4100000/596759/0 in:585714=4100000/7 [rec/s] out:85251=596759/7 [rec/s]
+2018-09-06 14:27:20,097 INFO streaming.PipeMapRed: R/W/S=4200000/607291/0 in:600000=4200000/7 [rec/s] out:86755=607291/7 [rec/s]
+2018-09-06 14:27:20,252 INFO streaming.PipeMapRed: R/W/S=4300000/615705/0 in:614285=4300000/7 [rec/s] out:87957=615705/7 [rec/s]
+2018-09-06 14:27:20,412 INFO streaming.PipeMapRed: R/W/S=4400000/625487/0 in:628571=4400000/7 [rec/s] out:89355=625487/7 [rec/s]
+2018-09-06 14:27:20,490 INFO mapred.LocalJobRunner: Records R/W=15199/1 > reduce
+2018-09-06 14:27:20,593 INFO streaming.PipeMapRed: R/W/S=4500000/633218/0 in:562500=4500000/8 [rec/s] out:79152=633218/8 [rec/s]
+2018-09-06 14:27:20,619 INFO mapreduce.Job:  map 100% reduce 76%
+2018-09-06 14:27:20,757 INFO streaming.PipeMapRed: R/W/S=4600000/638961/0 in:575000=4600000/8 [rec/s] out:79871=638969/8 [rec/s]
+2018-09-06 14:27:20,927 INFO streaming.PipeMapRed: R/W/S=4700000/646363/0 in:587500=4700000/8 [rec/s] out:80795=646363/8 [rec/s]
+2018-09-06 14:27:21,086 INFO streaming.PipeMapRed: R/W/S=4800000/652046/0 in:600000=4800000/8 [rec/s] out:81505=652046/8 [rec/s]
+2018-09-06 14:27:21,257 INFO streaming.PipeMapRed: R/W/S=4900000/662758/0 in:612500=4900000/8 [rec/s] out:82844=662758/8 [rec/s]
+2018-09-06 14:27:21,430 INFO streaming.PipeMapRed: R/W/S=5000000/673633/0 in:625000=5000000/8 [rec/s] out:84204=673633/8 [rec/s]
+2018-09-06 14:27:21,586 INFO streaming.PipeMapRed: R/W/S=5100000/686828/0 in:566666=5100000/9 [rec/s] out:76314=686828/9 [rec/s]
+2018-09-06 14:27:21,739 INFO streaming.PipeMapRed: R/W/S=5200000/689490/0 in:577777=5200000/9 [rec/s] out:76610=689490/9 [rec/s]
+2018-09-06 14:27:21,905 INFO streaming.PipeMapRed: R/W/S=5300000/692523/0 in:588888=5300000/9 [rec/s] out:76947=692523/9 [rec/s]
+2018-09-06 14:27:22,065 INFO streaming.PipeMapRed: R/W/S=5400000/701243/0 in:600000=5400000/9 [rec/s] out:77915=701243/9 [rec/s]
+2018-09-06 14:27:22,233 INFO streaming.PipeMapRed: R/W/S=5500000/708435/0 in:611111=5500000/9 [rec/s] out:78715=708435/9 [rec/s]
+2018-09-06 14:27:22,389 INFO streaming.PipeMapRed: R/W/S=5600000/712969/0 in:622222=5600000/9 [rec/s] out:79218=712969/9 [rec/s]
+2018-09-06 14:27:22,544 INFO streaming.PipeMapRed: R/W/S=5700000/714257/0 in:633333=5700000/9 [rec/s] out:79361=714257/9 [rec/s]
+2018-09-06 14:27:22,646 INFO streaming.PipeMapRed: Records R/W=5761374/717178
+2018-09-06 14:27:22,718 INFO streaming.PipeMapRed: R/W/S=5800000/720975/0 in:580000=5800000/10 [rec/s] out:72097=720975/10 [rec/s]
+2018-09-06 14:27:22,896 INFO streaming.PipeMapRed: R/W/S=5900000/723444/0 in:590000=5900000/10 [rec/s] out:72344=723444/10 [rec/s]
+2018-09-06 14:27:23,088 INFO streaming.PipeMapRed: R/W/S=6000000/741566/0 in:600000=6000000/10 [rec/s] out:74156=741566/10 [rec/s]
+2018-09-06 14:27:23,262 INFO streaming.PipeMapRed: R/W/S=6100000/754147/0 in:610000=6100000/10 [rec/s] out:75414=754147/10 [rec/s]
+2018-09-06 14:27:23,456 INFO streaming.PipeMapRed: R/W/S=6200000/762486/0 in:620000=6200000/10 [rec/s] out:76248=762486/10 [rec/s]
+2018-09-06 14:27:23,644 INFO streaming.PipeMapRed: R/W/S=6300000/774841/0 in:572727=6300000/11 [rec/s] out:70440=774841/11 [rec/s]
+2018-09-06 14:27:23,798 INFO streaming.PipeMapRed: R/W/S=6400000/780851/0 in:581818=6400000/11 [rec/s] out:70986=780851/11 [rec/s]
+2018-09-06 14:27:23,958 INFO streaming.PipeMapRed: R/W/S=6500000/790459/0 in:590909=6500000/11 [rec/s] out:71859=790459/11 [rec/s]
+2018-09-06 14:27:24,123 INFO streaming.PipeMapRed: R/W/S=6600000/802067/0 in:600000=6600000/11 [rec/s] out:72915=802067/11 [rec/s]
+2018-09-06 14:27:24,285 INFO streaming.PipeMapRed: R/W/S=6700000/814553/0 in:609090=6700000/11 [rec/s] out:74050=814553/11 [rec/s]
+2018-09-06 14:27:24,452 INFO streaming.PipeMapRed: R/W/S=6800000/822005/0 in:618181=6800000/11 [rec/s] out:74727=822005/11 [rec/s]
+2018-09-06 14:27:24,613 INFO streaming.PipeMapRed: R/W/S=6900000/827950/0 in:575000=6900000/12 [rec/s] out:68995=827950/12 [rec/s]
+2018-09-06 14:27:24,782 INFO streaming.PipeMapRed: R/W/S=7000000/840229/0 in:583333=7000000/12 [rec/s] out:70019=840229/12 [rec/s]
+2018-09-06 14:27:24,946 INFO streaming.PipeMapRed: R/W/S=7100000/850996/0 in:591666=7100000/12 [rec/s] out:70916=850996/12 [rec/s]
+2018-09-06 14:27:25,101 INFO streaming.PipeMapRed: R/W/S=7200000/861881/0 in:600000=7200000/12 [rec/s] out:71823=861881/12 [rec/s]
+2018-09-06 14:27:25,257 INFO streaming.PipeMapRed: R/W/S=7300000/874377/0 in:608333=7300000/12 [rec/s] out:72864=874377/12 [rec/s]
+2018-09-06 14:27:25,413 INFO streaming.PipeMapRed: R/W/S=7400000/883223/0 in:616666=7400000/12 [rec/s] out:73601=883223/12 [rec/s]
+2018-09-06 14:27:25,577 INFO streaming.PipeMapRed: R/W/S=7500000/889476/0 in:576923=7500000/13 [rec/s] out:68421=889476/13 [rec/s]
+2018-09-06 14:27:25,748 INFO streaming.PipeMapRed: R/W/S=7600000/901130/0 in:584615=7600000/13 [rec/s] out:69317=901130/13 [rec/s]
+2018-09-06 14:27:25,916 INFO streaming.PipeMapRed: R/W/S=7700000/910482/0 in:592307=7700000/13 [rec/s] out:70037=910482/13 [rec/s]
+2018-09-06 14:27:26,079 INFO streaming.PipeMapRed: R/W/S=7800000/918577/0 in:600000=7800000/13 [rec/s] out:70659=918577/13 [rec/s]
+2018-09-06 14:27:26,242 INFO streaming.PipeMapRed: R/W/S=7900000/928444/0 in:607692=7900000/13 [rec/s] out:71418=928444/13 [rec/s]
+2018-09-06 14:27:26,410 INFO streaming.PipeMapRed: R/W/S=8000000/936469/0 in:615384=8000000/13 [rec/s] out:72036=936469/13 [rec/s]
+2018-09-06 14:27:26,491 INFO mapred.LocalJobRunner: Records R/W=5761374/717178 > reduce
+2018-09-06 14:27:26,576 INFO streaming.PipeMapRed: R/W/S=8100000/948595/0 in:578571=8100000/14 [rec/s] out:67756=948595/14 [rec/s]
+2018-09-06 14:27:26,621 INFO mapreduce.Job:  map 100% reduce 82%
+2018-09-06 14:27:26,723 INFO streaming.PipeMapRed: R/W/S=8200000/955451/0 in:585714=8200000/14 [rec/s] out:68246=955451/14 [rec/s]
+2018-09-06 14:27:26,868 INFO streaming.PipeMapRed: R/W/S=8300000/955451/0 in:592857=8300000/14 [rec/s] out:68246=955451/14 [rec/s]
+2018-09-06 14:27:27,024 INFO streaming.PipeMapRed: R/W/S=8400000/962023/0 in:600000=8400000/14 [rec/s] out:68715=962023/14 [rec/s]
+2018-09-06 14:27:27,194 INFO streaming.PipeMapRed: R/W/S=8500000/973078/0 in:607142=8500000/14 [rec/s] out:69505=973078/14 [rec/s]
+2018-09-06 14:27:27,350 INFO streaming.PipeMapRed: R/W/S=8600000/976682/0 in:614285=8600000/14 [rec/s] out:69763=976682/14 [rec/s]
+2018-09-06 14:27:27,534 INFO streaming.PipeMapRed: R/W/S=8700000/991398/0 in:621428=8700000/14 [rec/s] out:70814=991398/14 [rec/s]
+2018-09-06 14:27:27,695 INFO streaming.PipeMapRed: R/W/S=8800000/999039/0 in:586666=8800000/15 [rec/s] out:66602=999039/15 [rec/s]
+2018-09-06 14:27:27,861 INFO streaming.PipeMapRed: R/W/S=8900000/1006668/0 in:593333=8900000/15 [rec/s] out:67111=1006668/15 [rec/s]
+2018-09-06 14:27:28,031 INFO streaming.PipeMapRed: R/W/S=9000000/1026042/0 in:600000=9000000/15 [rec/s] out:68402=1026042/15 [rec/s]
+2018-09-06 14:27:28,247 INFO streaming.PipeMapRed: R/W/S=9100000/1068362/0 in:606666=9100000/15 [rec/s] out:71224=1068362/15 [rec/s]
+2018-09-06 14:27:28,392 INFO streaming.PipeMapRed: R/W/S=9200000/1073471/0 in:613333=9200000/15 [rec/s] out:71564=1073471/15 [rec/s]
+2018-09-06 14:27:28,530 INFO streaming.PipeMapRed: R/W/S=9300000/1073471/0 in:620000=9300000/15 [rec/s] out:71564=1073471/15 [rec/s]
+2018-09-06 14:27:28,658 INFO streaming.PipeMapRed: R/W/S=9400000/1073471/0 in:587500=9400000/16 [rec/s] out:67091=1073471/16 [rec/s]
+2018-09-06 14:27:28,803 INFO streaming.PipeMapRed: R/W/S=9500000/1073471/0 in:593750=9500000/16 [rec/s] out:67091=1073471/16 [rec/s]
+2018-09-06 14:27:28,946 INFO streaming.PipeMapRed: R/W/S=9600000/1073471/0 in:600000=9600000/16 [rec/s] out:67091=1073471/16 [rec/s]
+2018-09-06 14:27:29,079 INFO streaming.PipeMapRed: R/W/S=9700000/1073471/0 in:606250=9700000/16 [rec/s] out:67091=1073471/16 [rec/s]
+2018-09-06 14:27:29,250 INFO streaming.PipeMapRed: R/W/S=9800000/1076213/0 in:612500=9800000/16 [rec/s] out:67263=1076213/16 [rec/s]
+2018-09-06 14:27:29,401 INFO streaming.PipeMapRed: R/W/S=9900000/1078822/0 in:618750=9900000/16 [rec/s] out:67426=1078822/16 [rec/s]
+2018-09-06 14:27:29,546 INFO streaming.PipeMapRed: R/W/S=10000000/1080381/0 in:625000=10000000/16 [rec/s] out:67523=1080381/16 [rec/s]
+2018-09-06 14:27:29,678 INFO streaming.PipeMapRed: R/W/S=10100000/1081347/0 in:594117=10100000/17 [rec/s] out:63608=1081347/17 [rec/s]
+2018-09-06 14:27:29,844 INFO streaming.PipeMapRed: R/W/S=10200000/1081640/0 in:600000=10200000/17 [rec/s] out:63625=1081640/17 [rec/s]
+2018-09-06 14:27:29,978 INFO streaming.PipeMapRed: R/W/S=10300000/1081640/0 in:605882=10300000/17 [rec/s] out:63625=1081640/17 [rec/s]
+2018-09-06 14:27:30,137 INFO streaming.PipeMapRed: R/W/S=10400000/1081640/0 in:611764=10400000/17 [rec/s] out:63625=1081640/17 [rec/s]
+2018-09-06 14:27:30,260 INFO streaming.PipeMapRed: R/W/S=10500000/1081640/0 in:617647=10500000/17 [rec/s] out:63625=1081640/17 [rec/s]
+2018-09-06 14:27:30,419 INFO streaming.PipeMapRed: R/W/S=10600000/1081640/0 in:623529=10600000/17 [rec/s] out:63625=1081640/17 [rec/s]
+2018-09-06 14:27:30,555 INFO streaming.PipeMapRed: R/W/S=10700000/1081640/0 in:594444=10700000/18 [rec/s] out:60091=1081640/18 [rec/s]
+2018-09-06 14:27:30,709 INFO streaming.PipeMapRed: R/W/S=10800000/1081640/0 in:600000=10800000/18 [rec/s] out:60091=1081640/18 [rec/s]
+2018-09-06 14:27:30,866 INFO streaming.PipeMapRed: R/W/S=10900000/1083964/0 in:605555=10900000/18 [rec/s] out:60220=1083964/18 [rec/s]
+2018-09-06 14:27:31,008 INFO streaming.PipeMapRed: R/W/S=11000000/1086251/0 in:611111=11000000/18 [rec/s] out:60347=1086251/18 [rec/s]
+2018-09-06 14:27:31,135 INFO streaming.PipeMapRed: R/W/S=11100000/1086251/0 in:616666=11100000/18 [rec/s] out:60347=1086251/18 [rec/s]
+2018-09-06 14:27:31,326 INFO streaming.PipeMapRed: R/W/S=11200000/1086853/0 in:622222=11200000/18 [rec/s] out:60380=1086853/18 [rec/s]
+2018-09-06 14:27:31,453 INFO streaming.PipeMapRed: R/W/S=11300000/1087115/0 in:627777=11300000/18 [rec/s] out:60395=1087115/18 [rec/s]
+2018-09-06 14:27:31,612 INFO streaming.PipeMapRed: R/W/S=11400000/1089469/0 in:600000=11400000/19 [rec/s] out:57340=1089469/19 [rec/s]
+2018-09-06 14:27:31,779 INFO streaming.PipeMapRed: R/W/S=11500000/1092329/0 in:605263=11500000/19 [rec/s] out:57491=1092329/19 [rec/s]
+2018-09-06 14:27:31,926 INFO streaming.PipeMapRed: R/W/S=11600000/1093312/0 in:610526=11600000/19 [rec/s] out:57542=1093312/19 [rec/s]
+2018-09-06 14:27:32,094 INFO streaming.PipeMapRed: R/W/S=11700000/1097448/0 in:615789=11700000/19 [rec/s] out:57760=1097448/19 [rec/s]
+2018-09-06 14:27:32,233 INFO streaming.PipeMapRed: R/W/S=11800000/1100342/0 in:621052=11800000/19 [rec/s] out:57912=1100342/19 [rec/s]
+2018-09-06 14:27:32,386 INFO streaming.PipeMapRed: R/W/S=11900000/1100342/0 in:626315=11900000/19 [rec/s] out:57912=1100342/19 [rec/s]
+2018-09-06 14:27:32,492 INFO mapred.LocalJobRunner: Records R/W=5761374/717178 > reduce
+2018-09-06 14:27:32,543 INFO streaming.PipeMapRed: R/W/S=12000000/1100342/0 in:631578=12000000/19 [rec/s] out:57912=1100342/19 [rec/s]
+2018-09-06 14:27:32,624 INFO mapreduce.Job:  map 100% reduce 86%
+2018-09-06 14:27:32,670 INFO streaming.PipeMapRed: Records R/W=12071719/1102844
+2018-09-06 14:27:32,725 INFO streaming.PipeMapRed: R/W/S=12100000/1105262/0 in:605000=12100000/20 [rec/s] out:55263=1105262/20 [rec/s]
+2018-09-06 14:27:32,881 INFO streaming.PipeMapRed: R/W/S=12200000/1110447/0 in:610000=12200000/20 [rec/s] out:55522=1110447/20 [rec/s]
+2018-09-06 14:27:33,035 INFO streaming.PipeMapRed: R/W/S=12300000/1114188/0 in:615000=12300000/20 [rec/s] out:55709=1114188/20 [rec/s]
+2018-09-06 14:27:33,186 INFO streaming.PipeMapRed: R/W/S=12400000/1118324/0 in:620000=12400000/20 [rec/s] out:55916=1118324/20 [rec/s]
+2018-09-06 14:27:33,341 INFO streaming.PipeMapRed: R/W/S=12500000/1122777/0 in:625000=12500000/20 [rec/s] out:56138=1122777/20 [rec/s]
+2018-09-06 14:27:33,494 INFO streaming.PipeMapRed: R/W/S=12600000/1126786/0 in:630000=12600000/20 [rec/s] out:56339=1126786/20 [rec/s]
+2018-09-06 14:27:33,637 INFO streaming.PipeMapRed: R/W/S=12700000/1130829/0 in:604761=12700000/21 [rec/s] out:53849=1130829/21 [rec/s]
+2018-09-06 14:27:33,795 INFO streaming.PipeMapRed: R/W/S=12800000/1131897/0 in:609523=12800000/21 [rec/s] out:53899=1131897/21 [rec/s]
+2018-09-06 14:27:33,953 INFO streaming.PipeMapRed: R/W/S=12900000/1136447/0 in:614285=12900000/21 [rec/s] out:54116=1136447/21 [rec/s]
+2018-09-06 14:27:34,110 INFO streaming.PipeMapRed: R/W/S=13000000/1140296/0 in:619047=13000000/21 [rec/s] out:54299=1140296/21 [rec/s]
+2018-09-06 14:27:34,264 INFO streaming.PipeMapRed: R/W/S=13100000/1145008/0 in:623809=13100000/21 [rec/s] out:54524=1145008/21 [rec/s]
+2018-09-06 14:27:34,417 INFO streaming.PipeMapRed: R/W/S=13200000/1148311/0 in:628571=13200000/21 [rec/s] out:54681=1148311/21 [rec/s]
+2018-09-06 14:27:34,550 INFO streaming.PipeMapRed: R/W/S=13300000/1149837/0 in:604545=13300000/22 [rec/s] out:52265=1149837/22 [rec/s]
+2018-09-06 14:27:34,715 INFO streaming.PipeMapRed: R/W/S=13400000/1149837/0 in:609090=13400000/22 [rec/s] out:52265=1149837/22 [rec/s]
+2018-09-06 14:27:34,861 INFO streaming.PipeMapRed: R/W/S=13500000/1151307/0 in:613636=13500000/22 [rec/s] out:52332=1151307/22 [rec/s]
+2018-09-06 14:27:35,010 INFO streaming.PipeMapRed: R/W/S=13600000/1153855/0 in:618181=13600000/22 [rec/s] out:52447=1153855/22 [rec/s]
+2018-09-06 14:27:35,153 INFO streaming.PipeMapRed: R/W/S=13700000/1154449/0 in:622727=13700000/22 [rec/s] out:52474=1154449/22 [rec/s]
+2018-09-06 14:27:35,307 INFO streaming.PipeMapRed: R/W/S=13800000/1154449/0 in:627272=13800000/22 [rec/s] out:52474=1154449/22 [rec/s]
+2018-09-06 14:27:35,469 INFO streaming.PipeMapRed: R/W/S=13900000/1154768/0 in:631818=13900000/22 [rec/s] out:52489=1154768/22 [rec/s]
+2018-09-06 14:27:35,628 INFO streaming.PipeMapRed: R/W/S=14000000/1157103/0 in:608695=14000000/23 [rec/s] out:50308=1157103/23 [rec/s]
+2018-09-06 14:27:35,779 INFO streaming.PipeMapRed: R/W/S=14100000/1157445/0 in:613043=14100000/23 [rec/s] out:50323=1157445/23 [rec/s]
+2018-09-06 14:27:35,939 INFO streaming.PipeMapRed: R/W/S=14200000/1161488/0 in:617391=14200000/23 [rec/s] out:50499=1161488/23 [rec/s]
+2018-09-06 14:27:36,084 INFO streaming.PipeMapRed: R/W/S=14300000/1165426/0 in:621739=14300000/23 [rec/s] out:50670=1165426/23 [rec/s]
+2018-09-06 14:27:36,223 INFO streaming.PipeMapRed: R/W/S=14400000/1167316/0 in:626086=14400000/23 [rec/s] out:50752=1167316/23 [rec/s]
+2018-09-06 14:27:36,369 INFO streaming.PipeMapRed: R/W/S=14500000/1167316/0 in:630434=14500000/23 [rec/s] out:50752=1167316/23 [rec/s]
+2018-09-06 14:27:36,514 INFO streaming.PipeMapRed: R/W/S=14600000/1169827/0 in:634782=14600000/23 [rec/s] out:50862=1169827/23 [rec/s]
+2018-09-06 14:27:36,664 INFO streaming.PipeMapRed: R/W/S=14700000/1169827/0 in:612500=14700000/24 [rec/s] out:48742=1169827/24 [rec/s]
+2018-09-06 14:27:36,841 INFO streaming.PipeMapRed: R/W/S=14800000/1175028/0 in:616666=14800000/24 [rec/s] out:48959=1175028/24 [rec/s]
+2018-09-06 14:27:36,975 INFO streaming.PipeMapRed: R/W/S=14900000/1175309/0 in:620833=14900000/24 [rec/s] out:48971=1175309/24 [rec/s]
+2018-09-06 14:27:37,128 INFO streaming.PipeMapRed: R/W/S=15000000/1175309/0 in:625000=15000000/24 [rec/s] out:48971=1175309/24 [rec/s]
+2018-09-06 14:27:37,272 INFO streaming.PipeMapRed: R/W/S=15100000/1175309/0 in:629166=15100000/24 [rec/s] out:48971=1175309/24 [rec/s]
+2018-09-06 14:27:37,419 INFO streaming.PipeMapRed: R/W/S=15200000/1175309/0 in:633333=15200000/24 [rec/s] out:48971=1175309/24 [rec/s]
+2018-09-06 14:27:37,568 INFO streaming.PipeMapRed: R/W/S=15300000/1175309/0 in:612000=15300000/25 [rec/s] out:47012=1175309/25 [rec/s]
+2018-09-06 14:27:37,716 INFO streaming.PipeMapRed: R/W/S=15400000/1175309/0 in:616000=15400000/25 [rec/s] out:47012=1175309/25 [rec/s]
+2018-09-06 14:27:37,873 INFO streaming.PipeMapRed: R/W/S=15500000/1175761/0 in:620000=15500000/25 [rec/s] out:47030=1175761/25 [rec/s]
+2018-09-06 14:27:38,493 INFO mapred.LocalJobRunner: Records R/W=12071719/1102844 > reduce
+2018-09-06 14:27:38,627 INFO mapreduce.Job:  map 100% reduce 91%
+2018-09-06 14:27:39,390 INFO streaming.PipeMapRed: R/W/S=15600000/1180686/0 in:600000=15600000/26 [rec/s] out:45411=1180686/26 [rec/s]
+2018-09-06 14:27:39,543 INFO streaming.PipeMapRed: R/W/S=15700000/1180686/0 in:603846=15700000/26 [rec/s] out:45411=1180686/26 [rec/s]
+2018-09-06 14:27:39,676 INFO streaming.PipeMapRed: R/W/S=15800000/1180686/0 in:585185=15800000/27 [rec/s] out:43729=1180686/27 [rec/s]
+2018-09-06 14:27:39,837 INFO streaming.PipeMapRed: R/W/S=15900000/1180686/0 in:588888=15900000/27 [rec/s] out:43729=1180686/27 [rec/s]
+2018-09-06 14:27:39,986 INFO streaming.PipeMapRed: R/W/S=16000000/1181025/0 in:592592=16000000/27 [rec/s] out:43741=1181025/27 [rec/s]
+2018-09-06 14:27:40,152 INFO streaming.PipeMapRed: R/W/S=16100000/1184924/0 in:596296=16100000/27 [rec/s] out:43886=1184924/27 [rec/s]
+2018-09-06 14:27:40,297 INFO streaming.PipeMapRed: R/W/S=16200000/1187404/0 in:600000=16200000/27 [rec/s] out:43977=1187404/27 [rec/s]
+2018-09-06 14:27:40,454 INFO streaming.PipeMapRed: R/W/S=16300000/1190730/0 in:603703=16300000/27 [rec/s] out:44101=1190730/27 [rec/s]
+2018-09-06 14:27:40,603 INFO streaming.PipeMapRed: R/W/S=16400000/1194811/0 in:585714=16400000/28 [rec/s] out:42671=1194811/28 [rec/s]
+2018-09-06 14:27:40,760 INFO streaming.PipeMapRed: R/W/S=16500000/1197240/0 in:589285=16500000/28 [rec/s] out:42758=1197240/28 [rec/s]
+2018-09-06 14:27:40,928 INFO streaming.PipeMapRed: R/W/S=16600000/1202287/0 in:592857=16600000/28 [rec/s] out:42939=1202295/28 [rec/s]
+2018-09-06 14:27:41,082 INFO streaming.PipeMapRed: R/W/S=16700000/1206053/0 in:596428=16700000/28 [rec/s] out:43073=1206053/28 [rec/s]
+2018-09-06 14:27:41,250 INFO streaming.PipeMapRed: R/W/S=16800000/1208997/0 in:600000=16800000/28 [rec/s] out:43178=1208997/28 [rec/s]
+2018-09-06 14:27:41,416 INFO streaming.PipeMapRed: R/W/S=16900000/1213332/0 in:603571=16900000/28 [rec/s] out:43333=1213332/28 [rec/s]
+2018-09-06 14:27:41,557 INFO streaming.PipeMapRed: R/W/S=17000000/1215187/0 in:586206=17000000/29 [rec/s] out:41903=1215187/29 [rec/s]
+2018-09-06 14:27:41,714 INFO streaming.PipeMapRed: R/W/S=17100000/1215187/0 in:589655=17100000/29 [rec/s] out:41903=1215187/29 [rec/s]
+2018-09-06 14:27:41,872 INFO streaming.PipeMapRed: R/W/S=17200000/1215187/0 in:593103=17200000/29 [rec/s] out:41903=1215187/29 [rec/s]
+2018-09-06 14:27:42,047 INFO streaming.PipeMapRed: R/W/S=17300000/1215187/0 in:596551=17300000/29 [rec/s] out:41903=1215187/29 [rec/s]
+2018-09-06 14:27:42,184 INFO streaming.PipeMapRed: R/W/S=17400000/1215187/0 in:600000=17400000/29 [rec/s] out:41903=1215187/29 [rec/s]
+2018-09-06 14:27:42,308 INFO streaming.PipeMapRed: R/W/S=17500000/1215187/0 in:603448=17500000/29 [rec/s] out:41903=1215187/29 [rec/s]
+2018-09-06 14:27:42,461 INFO streaming.PipeMapRed: R/W/S=17600000/1216447/0 in:606896=17600000/29 [rec/s] out:41946=1216447/29 [rec/s]
+2018-09-06 14:27:42,612 INFO streaming.PipeMapRed: R/W/S=17700000/1216447/0 in:590000=17700000/30 [rec/s] out:40548=1216447/30 [rec/s]
+2018-09-06 14:27:42,736 INFO streaming.PipeMapRed: Records R/W=17780054/1216448
+2018-09-06 14:27:42,766 INFO streaming.PipeMapRed: R/W/S=17800000/1217098/0 in:593333=17800000/30 [rec/s] out:40569=1217098/30 [rec/s]
+2018-09-06 14:27:42,906 INFO streaming.PipeMapRed: R/W/S=17900000/1219413/0 in:596666=17900000/30 [rec/s] out:40647=1219413/30 [rec/s]
+2018-09-06 14:27:43,068 INFO streaming.PipeMapRed: R/W/S=18000000/1225133/0 in:600000=18000000/30 [rec/s] out:40837=1225133/30 [rec/s]
+2018-09-06 14:27:43,217 INFO streaming.PipeMapRed: R/W/S=18100000/1229427/0 in:603333=18100000/30 [rec/s] out:40980=1229427/30 [rec/s]
+2018-09-06 14:27:43,375 INFO streaming.PipeMapRed: R/W/S=18200000/1229934/0 in:606666=18200000/30 [rec/s] out:40997=1229934/30 [rec/s]
+2018-09-06 14:27:43,551 INFO streaming.PipeMapRed: R/W/S=18300000/1232328/0 in:590322=18300000/31 [rec/s] out:39752=1232328/31 [rec/s]
+2018-09-06 14:27:43,705 INFO streaming.PipeMapRed: R/W/S=18400000/1236542/0 in:593548=18400000/31 [rec/s] out:39888=1236542/31 [rec/s]
+2018-09-06 14:27:43,868 INFO streaming.PipeMapRed: R/W/S=18500000/1239392/0 in:596774=18500000/31 [rec/s] out:39980=1239392/31 [rec/s]
+2018-09-06 14:27:44,034 INFO streaming.PipeMapRed: R/W/S=18600000/1244320/0 in:600000=18600000/31 [rec/s] out:40139=1244320/31 [rec/s]
+2018-09-06 14:27:44,181 INFO streaming.PipeMapRed: R/W/S=18700000/1246912/0 in:603225=18700000/31 [rec/s] out:40222=1246912/31 [rec/s]
+2018-09-06 14:27:44,336 INFO streaming.PipeMapRed: R/W/S=18800000/1249711/0 in:606451=18800000/31 [rec/s] out:40313=1249711/31 [rec/s]
+2018-09-06 14:27:44,494 INFO mapred.LocalJobRunner: Records R/W=17780054/1216448 > reduce
+2018-09-06 14:27:44,506 INFO streaming.PipeMapRed: R/W/S=18900000/1253397/0 in:609677=18900000/31 [rec/s] out:40432=1253397/31 [rec/s]
+2018-09-06 14:27:44,630 INFO mapreduce.Job:  map 100% reduce 96%
+2018-09-06 14:27:44,670 INFO streaming.PipeMapRed: R/W/S=19000000/1257794/0 in:593750=19000000/32 [rec/s] out:39306=1257801/32 [rec/s]
+2018-09-06 14:27:44,824 INFO streaming.PipeMapRed: R/W/S=19100000/1261274/0 in:596875=19100000/32 [rec/s] out:39414=1261274/32 [rec/s]
+2018-09-06 14:27:44,981 INFO streaming.PipeMapRed: R/W/S=19200000/1262775/0 in:600000=19200000/32 [rec/s] out:39461=1262775/32 [rec/s]
+2018-09-06 14:27:45,145 INFO streaming.PipeMapRed: R/W/S=19300000/1265572/0 in:603125=19300000/32 [rec/s] out:39549=1265572/32 [rec/s]
+2018-09-06 14:27:45,306 INFO streaming.PipeMapRed: R/W/S=19400000/1269660/0 in:606250=19400000/32 [rec/s] out:39676=1269660/32 [rec/s]
+2018-09-06 14:27:45,460 INFO streaming.PipeMapRed: R/W/S=19500000/1272696/0 in:609375=19500000/32 [rec/s] out:39771=1272696/32 [rec/s]
+2018-09-06 14:27:45,616 INFO streaming.PipeMapRed: R/W/S=19600000/1275893/0 in:593939=19600000/33 [rec/s] out:38663=1275893/33 [rec/s]
+2018-09-06 14:27:45,769 INFO streaming.PipeMapRed: R/W/S=19700000/1281075/0 in:596969=19700000/33 [rec/s] out:38820=1281075/33 [rec/s]
+2018-09-06 14:27:45,938 INFO streaming.PipeMapRed: R/W/S=19800000/1284396/0 in:600000=19800000/33 [rec/s] out:38921=1284396/33 [rec/s]
+2018-09-06 14:27:46,111 INFO streaming.PipeMapRed: R/W/S=19900000/1284396/0 in:603030=19900000/33 [rec/s] out:38921=1284396/33 [rec/s]
+2018-09-06 14:27:46,257 INFO streaming.PipeMapRed: R/W/S=20000000/1284396/0 in:606060=20000000/33 [rec/s] out:38921=1284396/33 [rec/s]
+2018-09-06 14:27:46,423 INFO streaming.PipeMapRed: R/W/S=20100000/1284396/0 in:609090=20100000/33 [rec/s] out:38921=1284396/33 [rec/s]
+2018-09-06 14:27:46,550 INFO streaming.PipeMapRed: R/W/S=20200000/1284396/0 in:594117=20200000/34 [rec/s] out:37776=1284396/34 [rec/s]
+2018-09-06 14:27:46,703 INFO streaming.PipeMapRed: R/W/S=20300000/1284396/0 in:597058=20300000/34 [rec/s] out:37776=1284396/34 [rec/s]
+2018-09-06 14:27:46,839 INFO streaming.PipeMapRed: R/W/S=20400000/1284396/0 in:600000=20400000/34 [rec/s] out:37776=1284396/34 [rec/s]
+2018-09-06 14:27:47,005 INFO streaming.PipeMapRed: R/W/S=20500000/1284396/0 in:602941=20500000/34 [rec/s] out:37776=1284396/34 [rec/s]
+2018-09-06 14:27:47,170 INFO streaming.PipeMapRed: R/W/S=20600000/1284396/0 in:605882=20600000/34 [rec/s] out:37776=1284396/34 [rec/s]
+2018-09-06 14:27:47,307 INFO streaming.PipeMapRed: R/W/S=20700000/1284396/0 in:608823=20700000/34 [rec/s] out:37776=1284396/34 [rec/s]
+2018-09-06 14:27:47,449 INFO streaming.PipeMapRed: R/W/S=20800000/1284396/0 in:611764=20800000/34 [rec/s] out:37776=1284396/34 [rec/s]
+2018-09-06 14:27:47,591 INFO streaming.PipeMapRed: R/W/S=20900000/1285545/0 in:597142=20900000/35 [rec/s] out:36729=1285545/35 [rec/s]
+2018-09-06 14:27:47,747 INFO streaming.PipeMapRed: R/W/S=21000000/1287344/0 in:600000=21000000/35 [rec/s] out:36781=1287344/35 [rec/s]
+2018-09-06 14:27:47,896 INFO streaming.PipeMapRed: R/W/S=21100000/1288276/0 in:602857=21100000/35 [rec/s] out:36807=1288276/35 [rec/s]
+2018-09-06 14:27:48,039 INFO streaming.PipeMapRed: R/W/S=21200000/1288276/0 in:605714=21200000/35 [rec/s] out:36807=1288276/35 [rec/s]
+2018-09-06 14:27:48,209 INFO streaming.PipeMapRed: R/W/S=21300000/1289571/0 in:608571=21300000/35 [rec/s] out:36844=1289571/35 [rec/s]
+2018-09-06 14:27:48,361 INFO streaming.PipeMapRed: R/W/S=21400000/1294160/0 in:611428=21400000/35 [rec/s] out:36976=1294160/35 [rec/s]
+2018-09-06 14:27:48,513 INFO streaming.PipeMapRed: R/W/S=21500000/1298659/0 in:614285=21500000/35 [rec/s] out:37104=1298659/35 [rec/s]
+2018-09-06 14:27:48,660 INFO streaming.PipeMapRed: R/W/S=21600000/1302176/0 in:600000=21600000/36 [rec/s] out:36171=1302176/36 [rec/s]
+2018-09-06 14:27:48,810 INFO streaming.PipeMapRed: R/W/S=21700000/1302176/0 in:602777=21700000/36 [rec/s] out:36171=1302176/36 [rec/s]
+2018-09-06 14:27:48,963 INFO streaming.PipeMapRed: R/W/S=21800000/1302176/0 in:605555=21800000/36 [rec/s] out:36171=1302176/36 [rec/s]
+2018-09-06 14:27:49,111 INFO streaming.PipeMapRed: R/W/S=21900000/1303156/0 in:608333=21900000/36 [rec/s] out:36198=1303156/36 [rec/s]
+2018-09-06 14:27:49,252 INFO streaming.PipeMapRed: R/W/S=22000000/1304072/0 in:611111=22000000/36 [rec/s] out:36224=1304072/36 [rec/s]
+2018-09-06 14:27:49,405 INFO streaming.PipeMapRed: R/W/S=22100000/1304072/0 in:613888=22100000/36 [rec/s] out:36224=1304072/36 [rec/s]
+2018-09-06 14:27:49,543 INFO streaming.PipeMapRed: R/W/S=22200000/1305311/0 in:616666=22200000/36 [rec/s] out:36258=1305311/36 [rec/s]
+2018-09-06 14:27:49,703 INFO streaming.PipeMapRed: R/W/S=22300000/1305311/0 in:602702=22300000/37 [rec/s] out:35278=1305311/37 [rec/s]
+2018-09-06 14:27:49,868 INFO streaming.PipeMapRed: R/W/S=22400000/1307427/0 in:605405=22400000/37 [rec/s] out:35335=1307427/37 [rec/s]
+2018-09-06 14:27:50,020 INFO streaming.PipeMapRed: MRErrorThread done
+2018-09-06 14:27:50,023 INFO streaming.PipeMapRed: mapRedFinished
+2018-09-06 14:27:50,023 INFO mapred.Task: Task:attempt_local228067204_0001_r_000000_0 is done. And is in the process of committing
+2018-09-06 14:27:50,024 INFO mapred.LocalJobRunner: Records R/W=17780054/1216448 > reduce
+2018-09-06 14:27:50,024 INFO mapred.Task: Task attempt_local228067204_0001_r_000000_0 is allowed to commit now
+2018-09-06 14:27:50,026 INFO output.FileOutputCommitter: Saved output of task 'attempt_local228067204_0001_r_000000_0' to file:/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/output_dir
+2018-09-06 14:27:50,030 INFO mapred.LocalJobRunner: Records R/W=17780054/1216448 > reduce
+2018-09-06 14:27:50,031 INFO mapred.Task: Task 'attempt_local228067204_0001_r_000000_0' done.
+2018-09-06 14:27:50,031 INFO mapred.Task: Final Counters for attempt_local228067204_0001_r_000000_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=938549752
+		FILE: Number of bytes written=796280229
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1309650
+		Reduce shuffle bytes=261576032
+		Reduce input records=22464036
+		Reduce output records=1309650
+		Spilled Records=22464036
+		Shuffled Maps =6
+		Failed Shuffles=0
+		Merged Map outputs=6
+		GC time elapsed (ms)=49
+		Total committed heap usage (bytes)=317718528
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=29404573
+2018-09-06 14:27:50,032 INFO mapred.LocalJobRunner: Finishing task: attempt_local228067204_0001_r_000000_0
+2018-09-06 14:27:50,032 INFO mapred.LocalJobRunner: reduce task executor complete.
+2018-09-06 14:27:50,633 INFO mapreduce.Job:  map 100% reduce 100%
+2018-09-06 14:27:50,634 INFO mapreduce.Job: Job job_local228067204_0001 completed successfully
+2018-09-06 14:27:50,658 INFO mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=2602543075
+		FILE: Number of bytes written=2815613876
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=306491
+		Map output records=22464036
+		Map output bytes=216647807
+		Map output materialized bytes=261576032
+		Input split bytes=815
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1309650
+		Reduce shuffle bytes=261576032
+		Reduce input records=22464036
+		Reduce output records=1309650
+		Spilled Records=65879052
+		Shuffled Maps =6
+		Failed Shuffles=0
+		Merged Map outputs=6
+		GC time elapsed (ms)=219
+		Total committed heap usage (bytes)=1900019712
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=172141027
+	File Output Format Counters 
+		Bytes Written=29404573
+2018-09-06 14:27:50,660 INFO streaming.StreamJob: Output directory: output_dir
+[1m[7m%[27m[1m[0m                                                                                                                                              [0m[27m[24m[J[44mapoorv@apoorv-Lenovo-Z580[49m [1m[32m~/Desktop/ML on large datasets/ml-ld-1/mapreduce
+[37m % [0m[37m[39m[49m[K[?1h=[?2004hhadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.0.3.jar -input data -output output_dir -mapper ./mapper.py -reducer ./reducer.py[K[1C[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                              [0m[27m[24m[J[44mapoorv@apoorv-Lenovo-Z580[49m [1m[32m~/Desktop/ML on large datasets/ml-ld-1/mapreduce
+[37m % [0m[37m[39m[49m[K[?1h=[?2004hrrm -r output_dir[1m/[0m[0m [?1l>[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                              [0m[27m[24m[J[44mapoorv@apoorv-Lenovo-Z580[49m [1m[32m~/Desktop/ML on large datasets/ml-ld-1/mapreduce
+[37m % [0m[37m[39m[49m[K[?1h=[?2004hrm -r output_dir[16Dhadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.0.3.jar -input data -output output_dir -mapper ./mapper.py -reducer ./reducer.py[K[1C[A[141C_ -output output_dir -mapper ./mapper.py -reducer ./reducer.py [A[80Ct -output output_dir -mapper ./mapper.py -reducer ./reducer.py [A[80Cr -output output_dir -mapper ./mapper.py -reducer ./reducer.py [A[80Ca -output output_dir -mapper ./mapper.py -reducer ./reducer.py [A[80Ci -output output_dir -mapper ./mapper.py -reducer ./reducer.py [A[80Cn -output output_dir -mapper ./mapper.py -reducer ./reducer.py [A[80C[?1l>[?2004l[1B
+2018-09-06 14:33:36,561 INFO impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2018-09-06 14:33:36,740 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2018-09-06 14:33:36,741 INFO impl.MetricsSystemImpl: JobTracker metrics system started
+2018-09-06 14:33:36,760 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+2018-09-06 14:33:36,931 INFO mapred.FileInputFormat: Total input files to process : 1
+2018-09-06 14:33:36,954 INFO mapreduce.JobSubmitter: number of splits:4
+2018-09-06 14:33:37,214 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local1302478611_0001
+2018-09-06 14:33:37,216 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2018-09-06 14:33:37,431 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+2018-09-06 14:33:37,439 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2018-09-06 14:33:37,447 INFO mapreduce.Job: Running job: job_local1302478611_0001
+2018-09-06 14:33:37,458 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapred.FileOutputCommitter
+2018-09-06 14:33:37,472 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:33:37,472 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:33:37,558 INFO mapred.LocalJobRunner: Waiting for map tasks
+2018-09-06 14:33:37,567 INFO mapred.LocalJobRunner: Starting task: attempt_local1302478611_0001_m_000000_0
+2018-09-06 14:33:37,625 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:33:37,630 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:33:37,669 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-09-06 14:33:37,680 INFO mapred.MapTask: Processing split: file:/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/data_train/full_train.txt:0+33554432
+2018-09-06 14:33:37,698 INFO mapred.MapTask: numReduceTasks: 1
+2018-09-06 14:33:37,763 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-09-06 14:33:37,763 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-09-06 14:33:37,763 INFO mapred.MapTask: soft limit at 83886080
+2018-09-06 14:33:37,763 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-09-06 14:33:37,763 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-09-06 14:33:37,767 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-09-06 14:33:37,773 INFO streaming.PipeMapRed: PipeMapRed exec [/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/././mapper.py]
+2018-09-06 14:33:37,781 INFO Configuration.deprecation: mapred.work.output.dir is deprecated. Instead, use mapreduce.task.output.dir
+2018-09-06 14:33:37,782 INFO Configuration.deprecation: map.input.start is deprecated. Instead, use mapreduce.map.input.start
+2018-09-06 14:33:37,784 INFO Configuration.deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+2018-09-06 14:33:37,784 INFO Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2018-09-06 14:33:37,786 INFO Configuration.deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+2018-09-06 14:33:37,787 INFO Configuration.deprecation: mapred.local.dir is deprecated. Instead, use mapreduce.cluster.local.dir
+2018-09-06 14:33:37,788 INFO Configuration.deprecation: map.input.file is deprecated. Instead, use mapreduce.map.input.file
+2018-09-06 14:33:37,789 INFO Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2018-09-06 14:33:37,790 INFO Configuration.deprecation: map.input.length is deprecated. Instead, use mapreduce.map.input.length
+2018-09-06 14:33:37,792 INFO Configuration.deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+2018-09-06 14:33:37,792 INFO Configuration.deprecation: user.name is deprecated. Instead, use mapreduce.job.user.name
+2018-09-06 14:33:37,793 INFO Configuration.deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2018-09-06 14:33:37,821 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:33:37,824 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:33:37,840 INFO streaming.PipeMapRed: Records R/W=78/1
+2018-09-06 14:33:37,851 INFO streaming.PipeMapRed: R/W/S=100/534/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:33:38,071 INFO streaming.PipeMapRed: R/W/S=1000/199130/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:33:38,458 INFO mapreduce.Job: Job job_local1302478611_0001 running in uber mode : false
+2018-09-06 14:33:38,459 INFO mapreduce.Job:  map 0% reduce 0%
+2018-09-06 14:33:38,842 INFO streaming.PipeMapRed: R/W/S=10000/1488459/0 in:10000=10000/1 [rec/s] out:1488488=1488488/1 [rec/s]
+2018-09-06 14:33:39,915 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:33:39,915 INFO mapred.MapTask: bufstart = 0; bufend = 30309446; bufvoid = 104857600
+2018-09-06 14:33:39,915 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 12820244(51280976); length = 13394153/6553600
+2018-09-06 14:33:39,915 INFO mapred.MapTask: (EQUATOR) 40795203 kvi 10198796(40795184)
+2018-09-06 14:33:44,078 INFO mapred.MapTask: Finished spill 0
+2018-09-06 14:33:44,079 INFO mapred.MapTask: (RESET) equator 40795203 kv 10198796(40795184) kvi 7577368(30309472)
+2018-09-06 14:33:44,523 INFO streaming.PipeMapRed: MRErrorThread done
+2018-09-06 14:33:44,526 INFO streaming.PipeMapRed: mapRedFinished
+2018-09-06 14:33:44,529 INFO mapred.LocalJobRunner: 
+2018-09-06 14:33:44,529 INFO mapred.MapTask: Starting flush of map output
+2018-09-06 14:33:44,529 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:33:44,529 INFO mapred.MapTask: bufstart = 40795203; bufend = 53429811; bufvoid = 104857600
+2018-09-06 14:33:44,529 INFO mapred.MapTask: kvstart = 10198796(40795184); kvend = 4700776(18803104); length = 5498021/6553600
+2018-09-06 14:33:46,007 INFO mapred.MapTask: Finished spill 1
+2018-09-06 14:33:46,012 INFO mapred.Merger: Merging 2 sorted segments
+2018-09-06 14:33:46,017 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 52390204 bytes
+2018-09-06 14:33:48,877 INFO mapred.Task: Task:attempt_local1302478611_0001_m_000000_0 is done. And is in the process of committing
+2018-09-06 14:33:48,880 INFO mapred.LocalJobRunner: Records R/W=78/1 > sort
+2018-09-06 14:33:48,880 INFO mapred.Task: Task 'attempt_local1302478611_0001_m_000000_0' done.
+2018-09-06 14:33:48,891 INFO mapred.Task: Final Counters for attempt_local1302478611_0001_m_000000_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=86125444
+		FILE: Number of bytes written=105429563
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=40215
+		Map output records=4723045
+		Map output bytes=42944054
+		Map output materialized bytes=52390212
+		Input split bytes=142
+		Combine input records=0
+		Spilled Records=9446090
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=75
+		Total committed heap usage (bytes)=198180864
+	File Input Format Counters 
+		Bytes Read=33558528
+2018-09-06 14:33:48,893 INFO mapred.LocalJobRunner: Finishing task: attempt_local1302478611_0001_m_000000_0
+2018-09-06 14:33:48,894 INFO mapred.LocalJobRunner: Starting task: attempt_local1302478611_0001_m_000001_0
+2018-09-06 14:33:48,903 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:33:48,903 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:33:48,904 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-09-06 14:33:48,906 INFO mapred.MapTask: Processing split: file:/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/data_train/full_train.txt:33554432+33554432
+2018-09-06 14:33:48,911 INFO mapred.MapTask: numReduceTasks: 1
+2018-09-06 14:33:48,987 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-09-06 14:33:48,987 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-09-06 14:33:48,987 INFO mapred.MapTask: soft limit at 83886080
+2018-09-06 14:33:48,987 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-09-06 14:33:48,987 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-09-06 14:33:49,003 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-09-06 14:33:49,030 INFO streaming.PipeMapRed: PipeMapRed exec [/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/././mapper.py]
+2018-09-06 14:33:49,049 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:33:49,049 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:33:49,059 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:33:49,079 INFO streaming.PipeMapRed: Records R/W=189/1
+2018-09-06 14:33:49,197 INFO streaming.PipeMapRed: R/W/S=1000/80367/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:33:49,467 INFO mapreduce.Job:  map 100% reduce 0%
+2018-09-06 14:33:49,960 INFO streaming.PipeMapRed: R/W/S=10000/1023122/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:33:51,426 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:33:51,426 INFO mapred.MapTask: bufstart = 0; bufend = 30704938; bufvoid = 104857600
+2018-09-06 14:33:51,427 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 12919116(51676464); length = 13295281/6553600
+2018-09-06 14:33:51,427 INFO mapred.MapTask: (EQUATOR) 41190693 kvi 10297668(41190672)
+2018-09-06 14:33:55,390 INFO mapred.MapTask: Finished spill 0
+2018-09-06 14:33:55,390 INFO mapred.MapTask: (RESET) equator 41190693 kv 10297668(41190672) kvi 7676240(30704960)
+2018-09-06 14:33:55,933 INFO streaming.PipeMapRed: MRErrorThread done
+2018-09-06 14:33:55,935 INFO streaming.PipeMapRed: mapRedFinished
+2018-09-06 14:33:55,935 INFO mapred.LocalJobRunner: 
+2018-09-06 14:33:55,935 INFO mapred.MapTask: Starting flush of map output
+2018-09-06 14:33:55,935 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:33:55,936 INFO mapred.MapTask: bufstart = 41190693; bufend = 53174951; bufvoid = 104857600
+2018-09-06 14:33:55,936 INFO mapred.MapTask: kvstart = 10297668(41190672); kvend = 5177400(20709600); length = 5120269/6553600
+2018-09-06 14:33:56,471 INFO mapreduce.Job:  map 25% reduce 0%
+2018-09-06 14:33:57,624 INFO mapred.MapTask: Finished spill 1
+2018-09-06 14:33:57,626 INFO mapred.Merger: Merging 2 sorted segments
+2018-09-06 14:33:57,627 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 51896989 bytes
+2018-09-06 14:34:00,584 INFO mapred.Task: Task:attempt_local1302478611_0001_m_000001_0 is done. And is in the process of committing
+2018-09-06 14:34:00,586 INFO mapred.LocalJobRunner: Records R/W=189/1 > sort
+2018-09-06 14:34:00,586 INFO mapred.Task: Task 'attempt_local1302478611_0001_m_000001_0' done.
+2018-09-06 14:34:00,587 INFO mapred.Task: Final Counters for attempt_local1302478611_0001_m_000001_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=171581564
+		FILE: Number of bytes written=209223591
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=48197
+		Map output records=4603889
+		Map output bytes=42689196
+		Map output materialized bytes=51896995
+		Input split bytes=142
+		Combine input records=0
+		Spilled Records=9207778
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=10
+		Total committed heap usage (bytes)=304087040
+	File Input Format Counters 
+		Bytes Read=33558528
+2018-09-06 14:34:00,587 INFO mapred.LocalJobRunner: Finishing task: attempt_local1302478611_0001_m_000001_0
+2018-09-06 14:34:00,587 INFO mapred.LocalJobRunner: Starting task: attempt_local1302478611_0001_m_000002_0
+2018-09-06 14:34:00,589 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:34:00,589 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:34:00,590 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-09-06 14:34:00,591 INFO mapred.MapTask: Processing split: file:/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/data_train/full_train.txt:67108864+33554432
+2018-09-06 14:34:00,592 INFO mapred.MapTask: numReduceTasks: 1
+2018-09-06 14:34:00,603 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-09-06 14:34:00,603 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-09-06 14:34:00,603 INFO mapred.MapTask: soft limit at 83886080
+2018-09-06 14:34:00,603 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-09-06 14:34:00,603 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-09-06 14:34:00,606 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-09-06 14:34:00,612 INFO streaming.PipeMapRed: PipeMapRed exec [/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/././mapper.py]
+2018-09-06 14:34:00,633 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:00,633 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:00,633 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:00,645 INFO streaming.PipeMapRed: Records R/W=176/1
+2018-09-06 14:34:00,715 INFO streaming.PipeMapRed: R/W/S=1000/79851/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:01,226 INFO streaming.PipeMapRed: R/W/S=10000/813356/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:01,475 INFO mapreduce.Job:  map 100% reduce 0%
+2018-09-06 14:34:02,666 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:34:02,667 INFO mapred.MapTask: bufstart = 0; bufend = 31974295; bufvoid = 104857600
+2018-09-06 14:34:02,667 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 13236452(52945808); length = 12977945/6553600
+2018-09-06 14:34:02,667 INFO mapred.MapTask: (EQUATOR) 42460043 kvi 10615004(42460016)
+2018-09-06 14:34:06,325 INFO mapred.MapTask: Finished spill 0
+2018-09-06 14:34:06,326 INFO mapred.MapTask: (RESET) equator 42460043 kv 10615004(42460016) kvi 7993580(31974320)
+2018-09-06 14:34:06,572 INFO streaming.PipeMapRed: MRErrorThread done
+2018-09-06 14:34:06,572 INFO streaming.PipeMapRed: mapRedFinished
+2018-09-06 14:34:06,573 INFO mapred.LocalJobRunner: 
+2018-09-06 14:34:06,573 INFO mapred.MapTask: Starting flush of map output
+2018-09-06 14:34:06,573 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:34:06,573 INFO mapred.MapTask: bufstart = 42460043; bufend = 52524070; bufvoid = 104857600
+2018-09-06 14:34:06,573 INFO mapred.MapTask: kvstart = 10615004(42460016); kvend = 6449784(25799136); length = 4165221/6553600
+2018-09-06 14:34:07,478 INFO mapreduce.Job:  map 50% reduce 0%
+2018-09-06 14:34:07,783 INFO mapred.MapTask: Finished spill 1
+2018-09-06 14:34:07,785 INFO mapred.Merger: Merging 2 sorted segments
+2018-09-06 14:34:07,786 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 50609922 bytes
+2018-09-06 14:34:10,541 INFO mapred.Task: Task:attempt_local1302478611_0001_m_000002_0 is done. And is in the process of committing
+2018-09-06 14:34:10,545 INFO mapred.LocalJobRunner: Records R/W=176/1 > sort
+2018-09-06 14:34:10,545 INFO mapred.Task: Task 'attempt_local1302478611_0001_m_000002_0' done.
+2018-09-06 14:34:10,546 INFO mapred.Task: Final Counters for attempt_local1302478611_0001_m_000002_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=255750614
+		FILE: Number of bytes written=310443479
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=67301
+		Map output records=4285793
+		Map output bytes=42038322
+		Map output materialized bytes=50609925
+		Input split bytes=142
+		Combine input records=0
+		Spilled Records=8571586
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=8
+		Total committed heap usage (bytes)=305135616
+	File Input Format Counters 
+		Bytes Read=33558528
+2018-09-06 14:34:10,546 INFO mapred.LocalJobRunner: Finishing task: attempt_local1302478611_0001_m_000002_0
+2018-09-06 14:34:10,546 INFO mapred.LocalJobRunner: Starting task: attempt_local1302478611_0001_m_000003_0
+2018-09-06 14:34:10,552 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:34:10,552 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:34:10,553 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-09-06 14:34:10,562 INFO mapred.MapTask: Processing split: file:/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/data_train/full_train.txt:100663296+30619299
+2018-09-06 14:34:10,564 INFO mapred.MapTask: numReduceTasks: 1
+2018-09-06 14:34:10,577 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-09-06 14:34:10,577 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-09-06 14:34:10,578 INFO mapred.MapTask: soft limit at 83886080
+2018-09-06 14:34:10,578 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-09-06 14:34:10,578 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-09-06 14:34:10,579 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-09-06 14:34:10,586 INFO streaming.PipeMapRed: PipeMapRed exec [/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/././mapper.py]
+2018-09-06 14:34:10,635 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:10,635 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:10,636 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:10,637 INFO streaming.PipeMapRed: Records R/W=286/1
+2018-09-06 14:34:10,713 INFO streaming.PipeMapRed: R/W/S=1000/58670/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:11,365 INFO streaming.PipeMapRed: R/W/S=10000/730119/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:11,482 INFO mapreduce.Job:  map 100% reduce 0%
+2018-09-06 14:34:13,848 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:34:13,848 INFO mapred.MapTask: bufstart = 0; bufend = 32275735; bufvoid = 104857600
+2018-09-06 14:34:13,848 INFO mapred.MapTask: kvstart = 26214396(104857584); kvend = 13311812(53247248); length = 12902585/6553600
+2018-09-06 14:34:13,848 INFO mapred.MapTask: (EQUATOR) 42761483 kvi 10690364(42761456)
+2018-09-06 14:34:14,578 INFO streaming.PipeMapRed: MRErrorThread done
+2018-09-06 14:34:14,597 INFO streaming.PipeMapRed: mapRedFinished
+2018-09-06 14:34:14,598 INFO mapred.LocalJobRunner: 
+2018-09-06 14:34:14,598 INFO mapred.MapTask: Starting flush of map output
+2018-09-06 14:34:15,485 INFO mapreduce.Job:  map 75% reduce 0%
+2018-09-06 14:34:18,687 INFO mapred.MapTask: Finished spill 0
+2018-09-06 14:34:18,687 INFO mapred.MapTask: (RESET) equator 42761483 kv 10690364(42761456) kvi 8283596(33134384)
+2018-09-06 14:34:18,687 INFO mapred.MapTask: Spilling map output
+2018-09-06 14:34:18,687 INFO mapred.MapTask: bufstart = 42761483; bufend = 48682067; bufvoid = 104857600
+2018-09-06 14:34:18,687 INFO mapred.MapTask: kvstart = 10690364(42761456); kvend = 8283600(33134400); length = 2406765/6553600
+2018-09-06 14:34:19,549 INFO mapred.MapTask: Finished spill 1
+2018-09-06 14:34:19,551 INFO mapred.Merger: Merging 2 sorted segments
+2018-09-06 14:34:19,552 INFO mapred.Merger: Down to the last merge-pass, with 2 segments left of total size: 45851008 bytes
+2018-09-06 14:34:22,362 INFO mapred.Task: Task:attempt_local1302478611_0001_m_000003_0 is done. And is in the process of committing
+2018-09-06 14:34:22,364 INFO mapred.LocalJobRunner: Records R/W=286/1 > sort
+2018-09-06 14:34:22,365 INFO mapred.Task: Task 'attempt_local1302478611_0001_m_000003_0' done.
+2018-09-06 14:34:22,365 INFO mapred.Task: Final Counters for attempt_local1302478611_0001_m_000003_0: Counters: 17
+	File System Counters
+		FILE: Number of bytes read=332221520
+		FILE: Number of bytes written=402145537
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=59284
+		Map output records=3827339
+		Map output bytes=38196319
+		Map output materialized bytes=45851010
+		Input split bytes=142
+		Combine input records=0
+		Spilled Records=7654678
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=6
+		Total committed heap usage (bytes)=306184192
+	File Input Format Counters 
+		Bytes Read=30619299
+2018-09-06 14:34:22,366 INFO mapred.LocalJobRunner: Finishing task: attempt_local1302478611_0001_m_000003_0
+2018-09-06 14:34:22,366 INFO mapred.LocalJobRunner: map task executor complete.
+2018-09-06 14:34:22,370 INFO mapred.LocalJobRunner: Waiting for reduce tasks
+2018-09-06 14:34:22,370 INFO mapred.LocalJobRunner: Starting task: attempt_local1302478611_0001_r_000000_0
+2018-09-06 14:34:22,381 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:34:22,381 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:34:22,382 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-09-06 14:34:22,393 INFO mapred.ReduceTask: Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@1c131864
+2018-09-06 14:34:22,395 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+2018-09-06 14:34:22,428 INFO reduce.MergeManagerImpl: MergerManager: memoryLimit=1440114304, maxSingleShuffleLimit=360028576, mergeThreshold=950475456, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+2018-09-06 14:34:22,435 INFO reduce.EventFetcher: attempt_local1302478611_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+2018-09-06 14:34:22,488 INFO mapreduce.Job:  map 100% reduce 0%
+2018-09-06 14:34:22,506 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1302478611_0001_m_000001_0 decomp: 51896991 len: 51896995 to MEMORY
+2018-09-06 14:34:22,590 INFO reduce.InMemoryMapOutput: Read 51896991 bytes from map-output for attempt_local1302478611_0001_m_000001_0
+2018-09-06 14:34:22,591 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 51896991, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->51896991
+2018-09-06 14:34:22,599 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1302478611_0001_m_000000_0 decomp: 52390208 len: 52390212 to MEMORY
+2018-09-06 14:34:22,667 INFO reduce.InMemoryMapOutput: Read 52390208 bytes from map-output for attempt_local1302478611_0001_m_000000_0
+2018-09-06 14:34:22,667 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 52390208, inMemoryMapOutputs.size() -> 2, commitMemory -> 51896991, usedMemory ->104287199
+2018-09-06 14:34:22,682 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1302478611_0001_m_000003_0 decomp: 45851006 len: 45851010 to MEMORY
+2018-09-06 14:34:22,759 INFO reduce.InMemoryMapOutput: Read 45851006 bytes from map-output for attempt_local1302478611_0001_m_000003_0
+2018-09-06 14:34:22,759 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 45851006, inMemoryMapOutputs.size() -> 3, commitMemory -> 104287199, usedMemory ->150138205
+2018-09-06 14:34:22,772 INFO reduce.LocalFetcher: localfetcher#1 about to shuffle output of map attempt_local1302478611_0001_m_000002_0 decomp: 50609921 len: 50609925 to MEMORY
+2018-09-06 14:34:22,852 INFO reduce.InMemoryMapOutput: Read 50609921 bytes from map-output for attempt_local1302478611_0001_m_000002_0
+2018-09-06 14:34:22,852 INFO reduce.MergeManagerImpl: closeInMemoryFile -> map-output of size: 50609921, inMemoryMapOutputs.size() -> 4, commitMemory -> 150138205, usedMemory ->200748126
+2018-09-06 14:34:22,853 INFO reduce.EventFetcher: EventFetcher is interrupted.. Returning
+2018-09-06 14:34:22,854 INFO mapred.LocalJobRunner: 4 / 4 copied.
+2018-09-06 14:34:22,854 INFO reduce.MergeManagerImpl: finalMerge called with 4 in-memory map-outputs and 0 on-disk map-outputs
+2018-09-06 14:34:22,856 INFO mapred.Merger: Merging 4 sorted segments
+2018-09-06 14:34:22,856 INFO mapred.Merger: Down to the last merge-pass, with 4 segments left of total size: 200748106 bytes
+2018-09-06 14:34:31,027 INFO reduce.MergeManagerImpl: Merged 4 segments, 200748126 bytes to disk to satisfy reduce memory limit
+2018-09-06 14:34:31,027 INFO reduce.MergeManagerImpl: Merging 1 files, 200748124 bytes from disk
+2018-09-06 14:34:31,028 INFO reduce.MergeManagerImpl: Merging 0 segments, 0 bytes from memory into reduce
+2018-09-06 14:34:31,028 INFO mapred.Merger: Merging 1 sorted segments
+2018-09-06 14:34:31,028 INFO mapred.Merger: Down to the last merge-pass, with 1 segments left of total size: 200748116 bytes
+2018-09-06 14:34:31,029 INFO mapred.LocalJobRunner: 4 / 4 copied.
+2018-09-06 14:34:31,035 INFO streaming.PipeMapRed: PipeMapRed exec [/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/././reducer.py]
+2018-09-06 14:34:31,039 INFO Configuration.deprecation: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+2018-09-06 14:34:31,042 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+2018-09-06 14:34:31,086 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:31,087 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:31,088 INFO streaming.PipeMapRed: R/W/S=100/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:31,101 INFO streaming.PipeMapRed: R/W/S=1000/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:31,155 INFO streaming.PipeMapRed: R/W/S=10000/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:31,191 INFO streaming.PipeMapRed: Records R/W=16138/1
+2018-09-06 14:34:31,547 INFO streaming.PipeMapRed: R/W/S=100000/28345/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:31,771 INFO streaming.PipeMapRed: R/W/S=200000/47385/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:31,999 INFO streaming.PipeMapRed: R/W/S=300000/71151/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:34:32,219 INFO streaming.PipeMapRed: R/W/S=400000/93839/0 in:400000=400000/1 [rec/s] out:93839=93839/1 [rec/s]
+2018-09-06 14:34:32,409 INFO streaming.PipeMapRed: R/W/S=500000/97791/0 in:500000=500000/1 [rec/s] out:97791=97791/1 [rec/s]
+2018-09-06 14:34:32,595 INFO streaming.PipeMapRed: R/W/S=600000/98814/0 in:600000=600000/1 [rec/s] out:98814=98814/1 [rec/s]
+2018-09-06 14:34:32,784 INFO streaming.PipeMapRed: R/W/S=700000/98814/0 in:700000=700000/1 [rec/s] out:98814=98814/1 [rec/s]
+2018-09-06 14:34:32,967 INFO streaming.PipeMapRed: R/W/S=800000/104209/0 in:800000=800000/1 [rec/s] out:104209=104209/1 [rec/s]
+2018-09-06 14:34:33,183 INFO streaming.PipeMapRed: R/W/S=900000/112941/0 in:450000=900000/2 [rec/s] out:56470=112941/2 [rec/s]
+2018-09-06 14:34:33,375 INFO streaming.PipeMapRed: R/W/S=1000000/117056/0 in:500000=1000000/2 [rec/s] out:58528=117056/2 [rec/s]
+2018-09-06 14:34:33,577 INFO streaming.PipeMapRed: R/W/S=1100000/120835/0 in:550000=1100000/2 [rec/s] out:60417=120835/2 [rec/s]
+2018-09-06 14:34:33,769 INFO streaming.PipeMapRed: R/W/S=1200000/123443/0 in:600000=1200000/2 [rec/s] out:61721=123443/2 [rec/s]
+2018-09-06 14:34:33,964 INFO streaming.PipeMapRed: R/W/S=1300000/127294/0 in:650000=1300000/2 [rec/s] out:63647=127294/2 [rec/s]
+2018-09-06 14:34:34,131 INFO streaming.PipeMapRed: R/W/S=1400000/132441/0 in:466666=1400000/3 [rec/s] out:44147=132441/3 [rec/s]
+2018-09-06 14:34:34,280 INFO streaming.PipeMapRed: R/W/S=1500000/136460/0 in:500000=1500000/3 [rec/s] out:45486=136460/3 [rec/s]
+2018-09-06 14:34:34,386 INFO mapred.LocalJobRunner: Records R/W=16138/1 > reduce
+2018-09-06 14:34:34,491 INFO streaming.PipeMapRed: R/W/S=1600000/145853/0 in:533333=1600000/3 [rec/s] out:48617=145853/3 [rec/s]
+2018-09-06 14:34:34,494 INFO mapreduce.Job:  map 100% reduce 69%
+2018-09-06 14:34:34,651 INFO streaming.PipeMapRed: R/W/S=1700000/145853/0 in:566666=1700000/3 [rec/s] out:48617=145853/3 [rec/s]
+2018-09-06 14:34:34,816 INFO streaming.PipeMapRed: R/W/S=1800000/147034/0 in:600000=1800000/3 [rec/s] out:49011=147034/3 [rec/s]
+2018-09-06 14:34:35,113 INFO streaming.PipeMapRed: R/W/S=1900000/245436/0 in:475000=1900000/4 [rec/s] out:61359=245436/4 [rec/s]
+2018-09-06 14:34:35,469 INFO streaming.PipeMapRed: R/W/S=2000000/345964/0 in:500000=2000000/4 [rec/s] out:86493=345974/4 [rec/s]
+2018-09-06 14:34:35,629 INFO streaming.PipeMapRed: R/W/S=2100000/367058/0 in:525000=2100000/4 [rec/s] out:91764=367058/4 [rec/s]
+2018-09-06 14:34:35,773 INFO streaming.PipeMapRed: R/W/S=2200000/373584/0 in:550000=2200000/4 [rec/s] out:93396=373584/4 [rec/s]
+2018-09-06 14:34:35,944 INFO streaming.PipeMapRed: R/W/S=2300000/376558/0 in:575000=2300000/4 [rec/s] out:94139=376558/4 [rec/s]
+2018-09-06 14:34:36,121 INFO streaming.PipeMapRed: R/W/S=2400000/383480/0 in:480000=2400000/5 [rec/s] out:76696=383480/5 [rec/s]
+2018-09-06 14:34:36,258 INFO streaming.PipeMapRed: R/W/S=2500000/386678/0 in:500000=2500000/5 [rec/s] out:77335=386678/5 [rec/s]
+2018-09-06 14:34:36,420 INFO streaming.PipeMapRed: R/W/S=2600000/401068/0 in:520000=2600000/5 [rec/s] out:80213=401068/5 [rec/s]
+2018-09-06 14:34:36,577 INFO streaming.PipeMapRed: R/W/S=2700000/413139/0 in:540000=2700000/5 [rec/s] out:82627=413139/5 [rec/s]
+2018-09-06 14:34:36,733 INFO streaming.PipeMapRed: R/W/S=2800000/423564/0 in:560000=2800000/5 [rec/s] out:84712=423564/5 [rec/s]
+2018-09-06 14:34:36,901 INFO streaming.PipeMapRed: R/W/S=2900000/434783/0 in:580000=2900000/5 [rec/s] out:86956=434783/5 [rec/s]
+2018-09-06 14:34:37,093 INFO streaming.PipeMapRed: R/W/S=3000000/443782/0 in:500000=3000000/6 [rec/s] out:73963=443782/6 [rec/s]
+2018-09-06 14:34:37,240 INFO streaming.PipeMapRed: R/W/S=3100000/453971/0 in:516666=3100000/6 [rec/s] out:75661=453971/6 [rec/s]
+2018-09-06 14:34:37,390 INFO streaming.PipeMapRed: R/W/S=3200000/462831/0 in:533333=3200000/6 [rec/s] out:77138=462831/6 [rec/s]
+2018-09-06 14:34:37,544 INFO streaming.PipeMapRed: R/W/S=3300000/474409/0 in:550000=3300000/6 [rec/s] out:79068=474409/6 [rec/s]
+2018-09-06 14:34:37,712 INFO streaming.PipeMapRed: R/W/S=3400000/482308/0 in:566666=3400000/6 [rec/s] out:80384=482308/6 [rec/s]
+2018-09-06 14:34:37,863 INFO streaming.PipeMapRed: R/W/S=3500000/489698/0 in:583333=3500000/6 [rec/s] out:81616=489698/6 [rec/s]
+2018-09-06 14:34:38,025 INFO streaming.PipeMapRed: R/W/S=3600000/498167/0 in:600000=3600000/6 [rec/s] out:83027=498167/6 [rec/s]
+2018-09-06 14:34:38,176 INFO streaming.PipeMapRed: R/W/S=3700000/508389/0 in:528571=3700000/7 [rec/s] out:72627=508389/7 [rec/s]
+2018-09-06 14:34:38,341 INFO streaming.PipeMapRed: R/W/S=3800000/520168/0 in:542857=3800000/7 [rec/s] out:74309=520168/7 [rec/s]
+2018-09-06 14:34:38,492 INFO streaming.PipeMapRed: R/W/S=3900000/529715/0 in:557142=3900000/7 [rec/s] out:75673=529715/7 [rec/s]
+2018-09-06 14:34:38,630 INFO streaming.PipeMapRed: R/W/S=4000000/530048/0 in:571428=4000000/7 [rec/s] out:75721=530048/7 [rec/s]
+2018-09-06 14:34:38,794 INFO streaming.PipeMapRed: R/W/S=4100000/540529/0 in:585714=4100000/7 [rec/s] out:77218=540529/7 [rec/s]
+2018-09-06 14:34:38,939 INFO streaming.PipeMapRed: R/W/S=4200000/547653/0 in:600000=4200000/7 [rec/s] out:78236=547653/7 [rec/s]
+2018-09-06 14:34:39,083 INFO streaming.PipeMapRed: R/W/S=4300000/550881/0 in:537500=4300000/8 [rec/s] out:68860=550881/8 [rec/s]
+2018-09-06 14:34:39,225 INFO streaming.PipeMapRed: R/W/S=4400000/556546/0 in:550000=4400000/8 [rec/s] out:69568=556546/8 [rec/s]
+2018-09-06 14:34:39,377 INFO streaming.PipeMapRed: R/W/S=4500000/566798/0 in:562500=4500000/8 [rec/s] out:70849=566798/8 [rec/s]
+2018-09-06 14:34:39,526 INFO streaming.PipeMapRed: R/W/S=4600000/582865/0 in:575000=4600000/8 [rec/s] out:72858=582865/8 [rec/s]
+2018-09-06 14:34:39,669 INFO streaming.PipeMapRed: R/W/S=4700000/591652/0 in:587500=4700000/8 [rec/s] out:73956=591652/8 [rec/s]
+2018-09-06 14:34:39,851 INFO streaming.PipeMapRed: R/W/S=4800000/603293/0 in:600000=4800000/8 [rec/s] out:75411=603293/8 [rec/s]
+2018-09-06 14:34:40,002 INFO streaming.PipeMapRed: R/W/S=4900000/611906/0 in:612500=4900000/8 [rec/s] out:76488=611906/8 [rec/s]
+2018-09-06 14:34:40,164 INFO streaming.PipeMapRed: R/W/S=5000000/624818/0 in:555555=5000000/9 [rec/s] out:69424=624818/9 [rec/s]
+2018-09-06 14:34:40,316 INFO streaming.PipeMapRed: R/W/S=5100000/635359/0 in:566666=5100000/9 [rec/s] out:70595=635359/9 [rec/s]
+2018-09-06 14:34:40,387 INFO mapred.LocalJobRunner: Records R/W=16138/1 > reduce
+2018-09-06 14:34:40,488 INFO streaming.PipeMapRed: R/W/S=5200000/642937/0 in:577777=5200000/9 [rec/s] out:71437=642937/9 [rec/s]
+2018-09-06 14:34:40,507 INFO mapreduce.Job:  map 100% reduce 79%
+2018-09-06 14:34:40,647 INFO streaming.PipeMapRed: R/W/S=5300000/654458/0 in:588888=5300000/9 [rec/s] out:72717=654458/9 [rec/s]
+2018-09-06 14:34:40,802 INFO streaming.PipeMapRed: R/W/S=5400000/666687/0 in:600000=5400000/9 [rec/s] out:74076=666687/9 [rec/s]
+2018-09-06 14:34:40,947 INFO streaming.PipeMapRed: R/W/S=5500000/678334/0 in:611111=5500000/9 [rec/s] out:75371=678341/9 [rec/s]
+2018-09-06 14:34:41,115 INFO streaming.PipeMapRed: R/W/S=5600000/689586/0 in:560000=5600000/10 [rec/s] out:68958=689586/10 [rec/s]
+2018-09-06 14:34:41,193 INFO streaming.PipeMapRed: Records R/W=5641698/691399
+2018-09-06 14:34:41,290 INFO streaming.PipeMapRed: R/W/S=5700000/696937/0 in:570000=5700000/10 [rec/s] out:69693=696937/10 [rec/s]
+2018-09-06 14:34:41,442 INFO streaming.PipeMapRed: R/W/S=5800000/709360/0 in:580000=5800000/10 [rec/s] out:70936=709360/10 [rec/s]
+2018-09-06 14:34:41,589 INFO streaming.PipeMapRed: R/W/S=5900000/717134/0 in:590000=5900000/10 [rec/s] out:71713=717134/10 [rec/s]
+2018-09-06 14:34:41,750 INFO streaming.PipeMapRed: R/W/S=6000000/728012/0 in:600000=6000000/10 [rec/s] out:72801=728012/10 [rec/s]
+2018-09-06 14:34:41,948 INFO streaming.PipeMapRed: R/W/S=6100000/738318/0 in:610000=6100000/10 [rec/s] out:73831=738318/10 [rec/s]
+2018-09-06 14:34:42,098 INFO streaming.PipeMapRed: R/W/S=6200000/749119/0 in:563636=6200000/11 [rec/s] out:68101=749119/11 [rec/s]
+2018-09-06 14:34:42,267 INFO streaming.PipeMapRed: R/W/S=6300000/749537/0 in:572727=6300000/11 [rec/s] out:68139=749537/11 [rec/s]
+2018-09-06 14:34:42,423 INFO streaming.PipeMapRed: R/W/S=6400000/760826/0 in:581818=6400000/11 [rec/s] out:69166=760826/11 [rec/s]
+2018-09-06 14:34:42,570 INFO streaming.PipeMapRed: R/W/S=6500000/765588/0 in:590909=6500000/11 [rec/s] out:69598=765588/11 [rec/s]
+2018-09-06 14:34:42,747 INFO streaming.PipeMapRed: R/W/S=6600000/779975/0 in:600000=6600000/11 [rec/s] out:70906=779975/11 [rec/s]
+2018-09-06 14:34:42,910 INFO streaming.PipeMapRed: R/W/S=6700000/787870/0 in:609090=6700000/11 [rec/s] out:71624=787870/11 [rec/s]
+2018-09-06 14:34:43,094 INFO streaming.PipeMapRed: R/W/S=6800000/802565/0 in:566666=6800000/12 [rec/s] out:66881=802573/12 [rec/s]
+2018-09-06 14:34:43,281 INFO streaming.PipeMapRed: R/W/S=6900000/841399/0 in:575000=6900000/12 [rec/s] out:70116=841399/12 [rec/s]
+2018-09-06 14:34:43,419 INFO streaming.PipeMapRed: R/W/S=7000000/844992/0 in:583333=7000000/12 [rec/s] out:70416=844992/12 [rec/s]
+2018-09-06 14:34:43,575 INFO streaming.PipeMapRed: R/W/S=7100000/844992/0 in:591666=7100000/12 [rec/s] out:70416=844992/12 [rec/s]
+2018-09-06 14:34:43,719 INFO streaming.PipeMapRed: R/W/S=7200000/844992/0 in:600000=7200000/12 [rec/s] out:70416=844992/12 [rec/s]
+2018-09-06 14:34:43,846 INFO streaming.PipeMapRed: R/W/S=7300000/844992/0 in:608333=7300000/12 [rec/s] out:70416=844992/12 [rec/s]
+2018-09-06 14:34:44,007 INFO streaming.PipeMapRed: R/W/S=7400000/846650/0 in:616666=7400000/12 [rec/s] out:70554=846650/12 [rec/s]
+2018-09-06 14:34:44,141 INFO streaming.PipeMapRed: R/W/S=7500000/849083/0 in:576923=7500000/13 [rec/s] out:65314=849083/13 [rec/s]
+2018-09-06 14:34:44,288 INFO streaming.PipeMapRed: R/W/S=7600000/851285/0 in:584615=7600000/13 [rec/s] out:65483=851285/13 [rec/s]
+2018-09-06 14:34:44,416 INFO streaming.PipeMapRed: R/W/S=7700000/851911/0 in:592307=7700000/13 [rec/s] out:65531=851911/13 [rec/s]
+2018-09-06 14:34:44,559 INFO streaming.PipeMapRed: R/W/S=7800000/852204/0 in:600000=7800000/13 [rec/s] out:65554=852204/13 [rec/s]
+2018-09-06 14:34:44,689 INFO streaming.PipeMapRed: R/W/S=7900000/852204/0 in:607692=7900000/13 [rec/s] out:65554=852204/13 [rec/s]
+2018-09-06 14:34:44,837 INFO streaming.PipeMapRed: R/W/S=8000000/852204/0 in:615384=8000000/13 [rec/s] out:65554=852204/13 [rec/s]
+2018-09-06 14:34:44,951 INFO streaming.PipeMapRed: R/W/S=8100000/852204/0 in:623076=8100000/13 [rec/s] out:65554=852204/13 [rec/s]
+2018-09-06 14:34:45,107 INFO streaming.PipeMapRed: R/W/S=8200000/852204/0 in:585714=8200000/14 [rec/s] out:60871=852204/14 [rec/s]
+2018-09-06 14:34:45,252 INFO streaming.PipeMapRed: R/W/S=8300000/854211/0 in:592857=8300000/14 [rec/s] out:61015=854211/14 [rec/s]
+2018-09-06 14:34:45,395 INFO streaming.PipeMapRed: R/W/S=8400000/855962/0 in:600000=8400000/14 [rec/s] out:61140=855962/14 [rec/s]
+2018-09-06 14:34:45,542 INFO streaming.PipeMapRed: R/W/S=8500000/855962/0 in:607142=8500000/14 [rec/s] out:61140=855962/14 [rec/s]
+2018-09-06 14:34:45,685 INFO streaming.PipeMapRed: R/W/S=8600000/856827/0 in:614285=8600000/14 [rec/s] out:61201=856827/14 [rec/s]
+2018-09-06 14:34:45,829 INFO streaming.PipeMapRed: R/W/S=8700000/858546/0 in:621428=8700000/14 [rec/s] out:61324=858546/14 [rec/s]
+2018-09-06 14:34:45,974 INFO streaming.PipeMapRed: R/W/S=8800000/861433/0 in:628571=8800000/14 [rec/s] out:61530=861433/14 [rec/s]
+2018-09-06 14:34:46,118 INFO streaming.PipeMapRed: R/W/S=8900000/864260/0 in:593333=8900000/15 [rec/s] out:57617=864260/15 [rec/s]
+2018-09-06 14:34:46,242 INFO streaming.PipeMapRed: R/W/S=9000000/868485/0 in:600000=9000000/15 [rec/s] out:57899=868485/15 [rec/s]
+2018-09-06 14:34:46,367 INFO streaming.PipeMapRed: R/W/S=9100000/868485/0 in:606666=9100000/15 [rec/s] out:57899=868485/15 [rec/s]
+2018-09-06 14:34:46,388 INFO mapred.LocalJobRunner: Records R/W=5641698/691399 > reduce
+2018-09-06 14:34:46,510 INFO mapreduce.Job:  map 100% reduce 86%
+2018-09-06 14:34:46,511 INFO streaming.PipeMapRed: R/W/S=9200000/870114/0 in:613333=9200000/15 [rec/s] out:58007=870114/15 [rec/s]
+2018-09-06 14:34:46,681 INFO streaming.PipeMapRed: R/W/S=9300000/875360/0 in:620000=9300000/15 [rec/s] out:58357=875360/15 [rec/s]
+2018-09-06 14:34:46,834 INFO streaming.PipeMapRed: R/W/S=9400000/879833/0 in:626666=9400000/15 [rec/s] out:58655=879833/15 [rec/s]
+2018-09-06 14:34:47,012 INFO streaming.PipeMapRed: R/W/S=9500000/884566/0 in:633333=9500000/15 [rec/s] out:58971=884566/15 [rec/s]
+2018-09-06 14:34:47,161 INFO streaming.PipeMapRed: R/W/S=9600000/889362/0 in:600000=9600000/16 [rec/s] out:55585=889362/16 [rec/s]
+2018-09-06 14:34:47,336 INFO streaming.PipeMapRed: R/W/S=9700000/893836/0 in:606250=9700000/16 [rec/s] out:55864=893836/16 [rec/s]
+2018-09-06 14:34:47,476 INFO streaming.PipeMapRed: R/W/S=9800000/896103/0 in:612500=9800000/16 [rec/s] out:56006=896103/16 [rec/s]
+2018-09-06 14:34:47,614 INFO streaming.PipeMapRed: R/W/S=9900000/900449/0 in:618750=9900000/16 [rec/s] out:56278=900449/16 [rec/s]
+2018-09-06 14:34:47,754 INFO streaming.PipeMapRed: R/W/S=10000000/905073/0 in:625000=10000000/16 [rec/s] out:56567=905073/16 [rec/s]
+2018-09-06 14:34:47,894 INFO streaming.PipeMapRed: R/W/S=10100000/910196/0 in:631250=10100000/16 [rec/s] out:56887=910196/16 [rec/s]
+2018-09-06 14:34:48,020 INFO streaming.PipeMapRed: R/W/S=10200000/911739/0 in:637500=10200000/16 [rec/s] out:56983=911739/16 [rec/s]
+2018-09-06 14:34:48,157 INFO streaming.PipeMapRed: R/W/S=10300000/912920/0 in:605882=10300000/17 [rec/s] out:53701=912920/17 [rec/s]
+2018-09-06 14:34:48,300 INFO streaming.PipeMapRed: R/W/S=10400000/914885/0 in:611764=10400000/17 [rec/s] out:53816=914885/17 [rec/s]
+2018-09-06 14:34:48,426 INFO streaming.PipeMapRed: R/W/S=10500000/915550/0 in:617647=10500000/17 [rec/s] out:53855=915550/17 [rec/s]
+2018-09-06 14:34:48,572 INFO streaming.PipeMapRed: R/W/S=10600000/915550/0 in:623529=10600000/17 [rec/s] out:53855=915550/17 [rec/s]
+2018-09-06 14:34:48,724 INFO streaming.PipeMapRed: R/W/S=10700000/917270/0 in:629411=10700000/17 [rec/s] out:53957=917270/17 [rec/s]
+2018-09-06 14:34:48,878 INFO streaming.PipeMapRed: R/W/S=10800000/918528/0 in:635294=10800000/17 [rec/s] out:54031=918536/17 [rec/s]
+2018-09-06 14:34:49,050 INFO streaming.PipeMapRed: R/W/S=10900000/923084/0 in:641176=10900000/17 [rec/s] out:54299=923084/17 [rec/s]
+2018-09-06 14:34:49,217 INFO streaming.PipeMapRed: R/W/S=11000000/926543/0 in:611111=11000000/18 [rec/s] out:51474=926543/18 [rec/s]
+2018-09-06 14:34:49,341 INFO streaming.PipeMapRed: R/W/S=11100000/926895/0 in:616666=11100000/18 [rec/s] out:51494=926895/18 [rec/s]
+2018-09-06 14:34:49,478 INFO streaming.PipeMapRed: R/W/S=11200000/929089/0 in:622222=11200000/18 [rec/s] out:51616=929089/18 [rec/s]
+2018-09-06 14:34:49,624 INFO streaming.PipeMapRed: R/W/S=11300000/929089/0 in:627777=11300000/18 [rec/s] out:51616=929089/18 [rec/s]
+2018-09-06 14:34:49,762 INFO streaming.PipeMapRed: R/W/S=11400000/933762/0 in:633333=11400000/18 [rec/s] out:51875=933762/18 [rec/s]
+2018-09-06 14:34:49,904 INFO streaming.PipeMapRed: R/W/S=11500000/933762/0 in:638888=11500000/18 [rec/s] out:51875=933762/18 [rec/s]
+2018-09-06 14:34:50,034 INFO streaming.PipeMapRed: R/W/S=11600000/933762/0 in:644444=11600000/18 [rec/s] out:51875=933762/18 [rec/s]
+2018-09-06 14:34:50,165 INFO streaming.PipeMapRed: R/W/S=11700000/933762/0 in:615789=11700000/19 [rec/s] out:49145=933762/19 [rec/s]
+2018-09-06 14:34:50,306 INFO streaming.PipeMapRed: R/W/S=11800000/933762/0 in:621052=11800000/19 [rec/s] out:49145=933762/19 [rec/s]
+2018-09-06 14:34:50,459 INFO streaming.PipeMapRed: R/W/S=11900000/935139/0 in:626315=11900000/19 [rec/s] out:49217=935139/19 [rec/s]
+2018-09-06 14:34:50,603 INFO streaming.PipeMapRed: R/W/S=12000000/938636/0 in:631578=12000000/19 [rec/s] out:49401=938636/19 [rec/s]
+2018-09-06 14:34:50,759 INFO streaming.PipeMapRed: R/W/S=12100000/938636/0 in:636842=12100000/19 [rec/s] out:49401=938636/19 [rec/s]
+2018-09-06 14:34:50,898 INFO streaming.PipeMapRed: R/W/S=12200000/938636/0 in:642105=12200000/19 [rec/s] out:49401=938636/19 [rec/s]
+2018-09-06 14:34:51,051 INFO streaming.PipeMapRed: R/W/S=12300000/939283/0 in:647368=12300000/19 [rec/s] out:49435=939283/19 [rec/s]
+2018-09-06 14:34:51,204 INFO streaming.PipeMapRed: Records R/W=12399247/943479
+2018-09-06 14:34:51,205 INFO streaming.PipeMapRed: R/W/S=12400000/943761/0 in:620000=12400000/20 [rec/s] out:47188=943761/20 [rec/s]
+2018-09-06 14:34:51,358 INFO streaming.PipeMapRed: R/W/S=12500000/946510/0 in:625000=12500000/20 [rec/s] out:47325=946510/20 [rec/s]
+2018-09-06 14:34:51,510 INFO streaming.PipeMapRed: R/W/S=12600000/950583/0 in:630000=12600000/20 [rec/s] out:47529=950583/20 [rec/s]
+2018-09-06 14:34:51,667 INFO streaming.PipeMapRed: R/W/S=12700000/953892/0 in:635000=12700000/20 [rec/s] out:47694=953892/20 [rec/s]
+2018-09-06 14:34:51,817 INFO streaming.PipeMapRed: R/W/S=12800000/959749/0 in:640000=12800000/20 [rec/s] out:47987=959749/20 [rec/s]
+2018-09-06 14:34:51,965 INFO streaming.PipeMapRed: R/W/S=12900000/962429/0 in:645000=12900000/20 [rec/s] out:48121=962429/20 [rec/s]
+2018-09-06 14:34:52,106 INFO streaming.PipeMapRed: R/W/S=13000000/966490/0 in:619047=13000000/21 [rec/s] out:46023=966490/21 [rec/s]
+2018-09-06 14:34:52,225 INFO streaming.PipeMapRed: R/W/S=13100000/968344/0 in:623809=13100000/21 [rec/s] out:46111=968344/21 [rec/s]
+2018-09-06 14:34:52,365 INFO streaming.PipeMapRed: R/W/S=13200000/968344/0 in:628571=13200000/21 [rec/s] out:46111=968344/21 [rec/s]
+2018-09-06 14:34:52,389 INFO mapred.LocalJobRunner: Records R/W=12399247/943479 > reduce
+2018-09-06 14:34:52,493 INFO streaming.PipeMapRed: R/W/S=13300000/968344/0 in:633333=13300000/21 [rec/s] out:46111=968344/21 [rec/s]
+2018-09-06 14:34:52,513 INFO mapreduce.Job:  map 100% reduce 93%
+2018-09-06 14:34:52,619 INFO streaming.PipeMapRed: R/W/S=13400000/968344/0 in:638095=13400000/21 [rec/s] out:46111=968344/21 [rec/s]
+2018-09-06 14:34:52,756 INFO streaming.PipeMapRed: R/W/S=13500000/968344/0 in:642857=13500000/21 [rec/s] out:46111=968344/21 [rec/s]
+2018-09-06 14:34:52,900 INFO streaming.PipeMapRed: R/W/S=13600000/969282/0 in:647619=13600000/21 [rec/s] out:46156=969282/21 [rec/s]
+2018-09-06 14:34:53,060 INFO streaming.PipeMapRed: R/W/S=13700000/969623/0 in:622727=13700000/22 [rec/s] out:44073=969623/22 [rec/s]
+2018-09-06 14:34:53,198 INFO streaming.PipeMapRed: R/W/S=13800000/971978/0 in:627272=13800000/22 [rec/s] out:44180=971978/22 [rec/s]
+2018-09-06 14:34:53,364 INFO streaming.PipeMapRed: R/W/S=13900000/978199/0 in:631818=13900000/22 [rec/s] out:44463=978205/22 [rec/s]
+2018-09-06 14:34:53,510 INFO streaming.PipeMapRed: R/W/S=14000000/980532/0 in:636363=14000000/22 [rec/s] out:44569=980532/22 [rec/s]
+2018-09-06 14:34:53,656 INFO streaming.PipeMapRed: R/W/S=14100000/983148/0 in:640909=14100000/22 [rec/s] out:44688=983148/22 [rec/s]
+2018-09-06 14:34:53,822 INFO streaming.PipeMapRed: R/W/S=14200000/987328/0 in:645454=14200000/22 [rec/s] out:44878=987328/22 [rec/s]
+2018-09-06 14:34:53,961 INFO streaming.PipeMapRed: R/W/S=14300000/990957/0 in:650000=14300000/22 [rec/s] out:45043=990957/22 [rec/s]
+2018-09-06 14:34:54,119 INFO streaming.PipeMapRed: R/W/S=14400000/995828/0 in:626086=14400000/23 [rec/s] out:43296=995828/23 [rec/s]
+2018-09-06 14:34:54,272 INFO streaming.PipeMapRed: R/W/S=14500000/998334/0 in:630434=14500000/23 [rec/s] out:43405=998334/23 [rec/s]
+2018-09-06 14:34:54,423 INFO streaming.PipeMapRed: R/W/S=14600000/1002999/0 in:634782=14600000/23 [rec/s] out:43608=1002999/23 [rec/s]
+2018-09-06 14:34:54,585 INFO streaming.PipeMapRed: R/W/S=14700000/1006221/0 in:639130=14700000/23 [rec/s] out:43748=1006221/23 [rec/s]
+2018-09-06 14:34:54,746 INFO streaming.PipeMapRed: R/W/S=14800000/1009298/0 in:643478=14800000/23 [rec/s] out:43882=1009298/23 [rec/s]
+2018-09-06 14:34:54,884 INFO streaming.PipeMapRed: R/W/S=14900000/1012154/0 in:647826=14900000/23 [rec/s] out:44006=1012154/23 [rec/s]
+2018-09-06 14:34:55,021 INFO streaming.PipeMapRed: R/W/S=15000000/1012775/0 in:652173=15000000/23 [rec/s] out:44033=1012775/23 [rec/s]
+2018-09-06 14:34:56,663 INFO streaming.PipeMapRed: R/W/S=15100000/1019249/0 in:604000=15100000/25 [rec/s] out:40769=1019249/25 [rec/s]
+2018-09-06 14:34:56,833 INFO streaming.PipeMapRed: R/W/S=15200000/1024169/0 in:608000=15200000/25 [rec/s] out:40966=1024169/25 [rec/s]
+2018-09-06 14:34:56,967 INFO streaming.PipeMapRed: R/W/S=15300000/1028356/0 in:612000=15300000/25 [rec/s] out:41134=1028356/25 [rec/s]
+2018-09-06 14:34:57,111 INFO streaming.PipeMapRed: R/W/S=15400000/1028971/0 in:592307=15400000/26 [rec/s] out:39575=1028971/26 [rec/s]
+2018-09-06 14:34:57,262 INFO streaming.PipeMapRed: R/W/S=15500000/1028971/0 in:596153=15500000/26 [rec/s] out:39575=1028971/26 [rec/s]
+2018-09-06 14:34:57,384 INFO streaming.PipeMapRed: R/W/S=15600000/1028971/0 in:600000=15600000/26 [rec/s] out:39575=1028971/26 [rec/s]
+2018-09-06 14:34:57,545 INFO streaming.PipeMapRed: R/W/S=15700000/1028971/0 in:603846=15700000/26 [rec/s] out:39575=1028971/26 [rec/s]
+2018-09-06 14:34:57,685 INFO streaming.PipeMapRed: R/W/S=15800000/1028971/0 in:607692=15800000/26 [rec/s] out:39575=1028971/26 [rec/s]
+2018-09-06 14:34:57,823 INFO streaming.PipeMapRed: R/W/S=15900000/1028971/0 in:611538=15900000/26 [rec/s] out:39575=1028971/26 [rec/s]
+2018-09-06 14:34:57,982 INFO streaming.PipeMapRed: R/W/S=16000000/1028971/0 in:615384=16000000/26 [rec/s] out:39575=1028971/26 [rec/s]
+2018-09-06 14:34:58,131 INFO streaming.PipeMapRed: R/W/S=16100000/1028971/0 in:596296=16100000/27 [rec/s] out:38110=1028971/27 [rec/s]
+2018-09-06 14:34:58,295 INFO streaming.PipeMapRed: R/W/S=16200000/1030099/0 in:600000=16200000/27 [rec/s] out:38151=1030099/27 [rec/s]
+2018-09-06 14:34:58,390 INFO mapred.LocalJobRunner: Records R/W=12399247/943479 > reduce
+2018-09-06 14:34:58,444 INFO streaming.PipeMapRed: R/W/S=16300000/1032262/0 in:603703=16300000/27 [rec/s] out:38231=1032262/27 [rec/s]
+2018-09-06 14:34:58,517 INFO mapreduce.Job:  map 100% reduce 98%
+2018-09-06 14:34:58,604 INFO streaming.PipeMapRed: R/W/S=16400000/1032262/0 in:607407=16400000/27 [rec/s] out:38231=1032262/27 [rec/s]
+2018-09-06 14:34:58,743 INFO streaming.PipeMapRed: R/W/S=16500000/1032262/0 in:611111=16500000/27 [rec/s] out:38231=1032262/27 [rec/s]
+2018-09-06 14:34:58,917 INFO streaming.PipeMapRed: R/W/S=16600000/1037831/0 in:614814=16600000/27 [rec/s] out:38438=1037831/27 [rec/s]
+2018-09-06 14:34:59,050 INFO streaming.PipeMapRed: R/W/S=16700000/1041467/0 in:618518=16700000/27 [rec/s] out:38572=1041467/27 [rec/s]
+2018-09-06 14:34:59,198 INFO streaming.PipeMapRed: R/W/S=16800000/1044343/0 in:600000=16800000/28 [rec/s] out:37297=1044343/28 [rec/s]
+2018-09-06 14:34:59,343 INFO streaming.PipeMapRed: R/W/S=16900000/1044343/0 in:603571=16900000/28 [rec/s] out:37297=1044343/28 [rec/s]
+2018-09-06 14:34:59,508 INFO streaming.PipeMapRed: R/W/S=17000000/1044666/0 in:607142=17000000/28 [rec/s] out:37309=1044666/28 [rec/s]
+2018-09-06 14:34:59,670 INFO streaming.PipeMapRed: R/W/S=17100000/1045940/0 in:610714=17100000/28 [rec/s] out:37355=1045940/28 [rec/s]
+2018-09-06 14:34:59,811 INFO streaming.PipeMapRed: R/W/S=17200000/1046259/0 in:614285=17200000/28 [rec/s] out:37366=1046259/28 [rec/s]
+2018-09-06 14:34:59,978 INFO streaming.PipeMapRed: R/W/S=17300000/1047178/0 in:617857=17300000/28 [rec/s] out:37399=1047178/28 [rec/s]
+2018-09-06 14:35:00,115 INFO streaming.PipeMapRed: R/W/S=17400000/1048999/0 in:600000=17400000/29 [rec/s] out:36172=1048999/29 [rec/s]
+2018-09-06 14:35:00,219 INFO streaming.PipeMapRed: MRErrorThread done
+2018-09-06 14:35:00,223 INFO streaming.PipeMapRed: mapRedFinished
+2018-09-06 14:35:00,224 INFO mapred.Task: Task:attempt_local1302478611_0001_r_000000_0 is done. And is in the process of committing
+2018-09-06 14:35:00,225 INFO mapred.LocalJobRunner: Records R/W=12399247/943479 > reduce
+2018-09-06 14:35:00,226 INFO mapred.Task: Task attempt_local1302478611_0001_r_000000_0 is allowed to commit now
+2018-09-06 14:35:00,228 INFO output.FileOutputCommitter: Saved output of task 'attempt_local1302478611_0001_r_000000_0' to file:/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/output_dir
+2018-09-06 14:35:00,229 INFO mapred.LocalJobRunner: Records R/W=12399247/943479 > reduce
+2018-09-06 14:35:00,229 INFO mapred.Task: Task 'attempt_local1302478611_0001_r_000000_0' done.
+2018-09-06 14:35:00,230 INFO mapred.Task: Final Counters for attempt_local1302478611_0001_r_000000_0: Counters: 24
+	File System Counters
+		FILE: Number of bytes read=733717914
+		FILE: Number of bytes written=625077323
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1050846
+		Reduce shuffle bytes=200748142
+		Reduce input records=17440066
+		Reduce output records=1050846
+		Spilled Records=17440066
+		Shuffled Maps =4
+		Failed Shuffles=0
+		Merged Map outputs=4
+		GC time elapsed (ms)=44
+		Total committed heap usage (bytes)=307232768
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Output Format Counters 
+		Bytes Written=22183662
+2018-09-06 14:35:00,231 INFO mapred.LocalJobRunner: Finishing task: attempt_local1302478611_0001_r_000000_0
+2018-09-06 14:35:00,231 INFO mapred.LocalJobRunner: reduce task executor complete.
+2018-09-06 14:35:00,518 INFO mapreduce.Job:  map 100% reduce 100%
+2018-09-06 14:35:00,519 INFO mapreduce.Job: Job job_local1302478611_0001 completed successfully
+2018-09-06 14:35:00,539 INFO mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=1579397056
+		FILE: Number of bytes written=1652319493
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=214997
+		Map output records=17440066
+		Map output bytes=165867891
+		Map output materialized bytes=200748142
+		Input split bytes=568
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=1050846
+		Reduce shuffle bytes=200748142
+		Reduce input records=17440066
+		Reduce output records=1050846
+		Spilled Records=52320198
+		Shuffled Maps =4
+		Failed Shuffles=0
+		Merged Map outputs=4
+		GC time elapsed (ms)=143
+		Total committed heap usage (bytes)=1420820480
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=131294883
+	File Output Format Counters 
+		Bytes Written=22183662
+2018-09-06 14:35:00,539 INFO streaming.StreamJob: Output directory: output_dir
+[1m[7m%[27m[1m[0m                                                                                                                                              [0m[27m[24m[J[44mapoorv@apoorv-Lenovo-Z580[49m [1m[32m~/Desktop/ML on large datasets/ml-ld-1/mapreduce
+[37m % [0m[37m[39m[49m[K[?1h=[?2004hhadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.0.3.jar -input data_train -output output_dir -mapper ./mapper.py -reducer ./reducer.py[K[1C[?1l>[?2004l
+2018-09-06 14:42:22,677 INFO impl.MetricsConfig: loaded properties from hadoop-metrics2.properties
+2018-09-06 14:42:22,844 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2018-09-06 14:42:22,844 INFO impl.MetricsSystemImpl: JobTracker metrics system started
+2018-09-06 14:42:22,867 WARN impl.MetricsSystemImpl: JobTracker metrics system already initialized!
+2018-09-06 14:42:23,067 INFO mapred.FileInputFormat: Total input files to process : 1
+2018-09-06 14:42:23,093 INFO mapreduce.JobSubmitter: number of splits:4
+2018-09-06 14:42:23,394 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_local34704518_0001
+2018-09-06 14:42:23,396 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2018-09-06 14:42:23,617 INFO mapreduce.Job: The url to track the job: http://localhost:8080/
+2018-09-06 14:42:23,619 INFO mapreduce.Job: Running job: job_local34704518_0001
+2018-09-06 14:42:23,639 INFO mapred.LocalJobRunner: OutputCommitter set in config null
+2018-09-06 14:42:23,642 INFO mapred.LocalJobRunner: OutputCommitter is org.apache.hadoop.mapred.FileOutputCommitter
+2018-09-06 14:42:23,659 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:42:23,659 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:42:23,738 INFO mapred.LocalJobRunner: Waiting for map tasks
+2018-09-06 14:42:23,749 INFO mapred.LocalJobRunner: Starting task: attempt_local34704518_0001_m_000000_0
+2018-09-06 14:42:23,809 INFO output.FileOutputCommitter: File Output Committer Algorithm version is 2
+2018-09-06 14:42:23,812 INFO output.FileOutputCommitter: FileOutputCommitter skip cleanup _temporary folders under output directory:false, ignore cleanup failures: false
+2018-09-06 14:42:23,868 INFO mapred.Task:  Using ResourceCalculatorProcessTree : [ ]
+2018-09-06 14:42:23,892 INFO mapred.MapTask: Processing split: file:/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/data_train/full_train.txt:0+33554432
+2018-09-06 14:42:23,907 INFO mapred.MapTask: numReduceTasks: 1
+2018-09-06 14:42:23,985 INFO mapred.MapTask: (EQUATOR) 0 kvi 26214396(104857584)
+2018-09-06 14:42:23,986 INFO mapred.MapTask: mapreduce.task.io.sort.mb: 100
+2018-09-06 14:42:23,986 INFO mapred.MapTask: soft limit at 83886080
+2018-09-06 14:42:23,986 INFO mapred.MapTask: bufstart = 0; bufvoid = 104857600
+2018-09-06 14:42:23,986 INFO mapred.MapTask: kvstart = 26214396; length = 6553600
+2018-09-06 14:42:23,991 INFO mapred.MapTask: Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+2018-09-06 14:42:24,008 INFO streaming.PipeMapRed: PipeMapRed exec [/home/apoorv/Desktop/ML on large datasets/ml-ld-1/mapreduce/././mapper.py]
+2018-09-06 14:42:24,026 INFO Configuration.deprecation: mapred.work.output.dir is deprecated. Instead, use mapreduce.task.output.dir
+2018-09-06 14:42:24,030 INFO Configuration.deprecation: map.input.start is deprecated. Instead, use mapreduce.map.input.start
+2018-09-06 14:42:24,031 INFO Configuration.deprecation: mapred.task.is.map is deprecated. Instead, use mapreduce.task.ismap
+2018-09-06 14:42:24,031 INFO Configuration.deprecation: mapred.task.id is deprecated. Instead, use mapreduce.task.attempt.id
+2018-09-06 14:42:24,032 INFO Configuration.deprecation: mapred.tip.id is deprecated. Instead, use mapreduce.task.id
+2018-09-06 14:42:24,032 INFO Configuration.deprecation: mapred.local.dir is deprecated. Instead, use mapreduce.cluster.local.dir
+2018-09-06 14:42:24,033 INFO Configuration.deprecation: map.input.file is deprecated. Instead, use mapreduce.map.input.file
+2018-09-06 14:42:24,033 INFO Configuration.deprecation: mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+2018-09-06 14:42:24,033 INFO Configuration.deprecation: map.input.length is deprecated. Instead, use mapreduce.map.input.length
+2018-09-06 14:42:24,034 INFO Configuration.deprecation: mapred.job.id is deprecated. Instead, use mapreduce.job.id
+2018-09-06 14:42:24,034 INFO Configuration.deprecation: user.name is deprecated. Instead, use mapreduce.job.user.name
+2018-09-06 14:42:24,035 INFO Configuration.deprecation: mapred.task.partition is deprecated. Instead, use mapreduce.task.partition
+2018-09-06 14:42:24,083 INFO streaming.PipeMapRed: R/W/S=1/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:42:24,086 INFO streaming.PipeMapRed: R/W/S=10/0/0 in:NA [rec/s] out:NA [rec/s]
+2018-09-06 14:42:24,637 INFO mapreduce.Job: Job job_local34704518_0001 running in uber mode : false
+2018-09-06 14:42:24,638 INFO mapreduce.Job:  map 0% reduce 0%
+2018-09-06 14:42:31,537 INFO streaming.PipeMapRed: Records R/W=78/1
+2018-09-06 14:42:32,984 INFO streaming.PipeMapRed: R/W/S=100/3680/0 in:12=100/8 [rec/s] out:460=3680/8 [rec/s]
+2018-09-06 14:42:35,840 INFO mapred.LocalJobRunner: Records R/W=78/1 > map
+2018-09-06 14:42:41,585 INFO streaming.PipeMapRed: Records R/W=342/22325
+2018-09-06 14:42:41,841 INFO mapred.LocalJobRunner: Records R/W=342/22325 > map
+2018-09-06 14:42:47,842 INFO mapred.LocalJobRunner: Records R/W=342/22325 > map
+2018-09-06 14:42:51,629 INFO streaming.PipeMapRed: Records R/W=528/45339
+2018-09-06 14:42:53,843 INFO mapred.LocalJobRunner: Records R/W=528/45339 > map
+2018-09-06 14:42:59,844 INFO mapred.LocalJobRunner: Records R/W=528/45339 > map
+2018-09-06 14:43:00,663 INFO mapreduce.Job:  map 1% reduce 0%
+2018-09-06 14:43:01,779 INFO streaming.PipeMapRed: Records R/W=786/67790
+2018-09-06 14:43:05,845 INFO mapred.LocalJobRunner: Records R/W=786/67790 > map
+2018-09-06 14:43:10,987 INFO streaming.PipeMapRed: R/W/S=1000/89140/0 in:21=1000/46 [rec/s] out:1937=89140/46 [rec/s]
+2018-09-06 14:43:11,828 INFO streaming.PipeMapRed: Records R/W=1047/90715
+2018-09-06 14:43:11,845 INFO mapred.LocalJobRunner: Records R/W=1047/90715 > map
+2018-09-06 14:43:17,846 INFO mapred.LocalJobRunner: Records R/W=1047/90715 > map
+2018-09-06 14:43:22,005 INFO streaming.PipeMapRed: Records R/W=1241/114180
+2018-09-06 14:43:23,847 INFO mapred.LocalJobRunner: Records R/W=1241/114180 > map
+2018-09-06 14:43:29,848 INFO mapred.LocalJobRunner: Records R/W=1241/114180 > map
+2018-09-06 14:43:32,067 INFO streaming.PipeMapRed: Records R/W=1515/137670
+2018-09-06 14:43:35,849 INFO mapred.LocalJobRunner: Records R/W=1515/137670 > map
+2018-09-06 14:43:41,850 INFO mapred.LocalJobRunner: Records R/W=1515/137670 > map
+2018-09-06 14:43:42,108 INFO streaming.PipeMapRed: Records R/W=1819/160113
+2018-09-06 14:43:47,851 INFO mapred.LocalJobRunner: Records R/W=1819/160113 > map
+2018-09-06 14:43:52,165 INFO streaming.PipeMapRed: Records R/W=2019/183196
+2018-09-06 14:43:53,852 INFO mapred.LocalJobRunner: Records R/W=2019/183196 > map
+2018-09-06 14:43:59,853 INFO mapred.LocalJobRunner: Records R/W=2019/183196 > map
+2018-09-06 14:44:00,698 INFO mapreduce.Job:  map 2% reduce 0%
+2018-09-06 14:44:02,246 INFO streaming.PipeMapRed: Records R/W=2353/205117
+2018-09-06 14:44:05,854 INFO mapred.LocalJobRunner: Records R/W=2353/205117 > map
+2018-09-06 14:44:11,855 INFO mapred.LocalJobRunner: Records R/W=2353/205117 > map
+2018-09-06 14:44:12,363 INFO streaming.PipeMapRed: Records R/W=2590/228654
+2018-09-06 14:44:17,855 INFO mapred.LocalJobRunner: Records R/W=2590/228654 > map
+2018-09-06 14:44:22,409 INFO streaming.PipeMapRed: Records R/W=2973/253408
+2018-09-06 14:44:23,856 INFO mapred.LocalJobRunner: Records R/W=2973/253408 > map
+2018-09-06 14:44:29,857 INFO mapred.LocalJobRunner: Records R/W=2973/253408 > map
+2018-09-06 14:44:32,415 INFO streaming.PipeMapRed: Records R/W=3360/277648
+2018-09-06 14:44:35,858 INFO mapred.LocalJobRunner: Records R/W=3360/277648 > map
+2018-09-06 14:44:41,858 INFO mapred.LocalJobRunner: Records R/W=3360/277648 > map
+2018-09-06 14:44:42,568 INFO streaming.PipeMapRed: Records R/W=3630/301473
+2018-09-06 14:44:47,859 INFO mapred.LocalJobRunner: Records R/W=3630/301473 > map
+2018-09-06 14:44:52,692 INFO streaming.PipeMapRed: Records R/W=4028/325211
+2018-09-06 14:44:53,860 INFO mapred.LocalJobRunner: Records R/W=4028/325211 > map
+2018-09-06 14:44:59,860 INFO mapred.LocalJobRunner: Records R/W=4028/325211 > map
+2018-09-06 14:45:00,727 INFO mapreduce.Job:  map 3% reduce 0%
+2018-09-06 14:45:02,710 INFO streaming.PipeMapRed: Records R/W=4296/347878
+2018-09-06 14:45:05,861 INFO mapred.LocalJobRunner: Records R/W=4296/347878 > map
+2018-09-06 14:45:11,862 INFO mapred.LocalJobRunner: Records R/W=4296/347878 > map
+2018-09-06 14:45:12,903 INFO streaming.PipeMapRed: Records R/W=4679/372125
+2018-09-06 14:45:17,863 INFO mapred.LocalJobRunner: Records R/W=4679/372125 > map
+2018-09-06 14:45:23,010 INFO streaming.PipeMapRed: Records R/W=5068/395304
+2018-09-06 14:45:23,863 INFO mapred.LocalJobRunner: Records R/W=5068/395304 > map
+2018-09-06 14:45:29,864 INFO mapred.LocalJobRunner: Records R/W=5068/395304 > map
+2018-09-06 14:45:33,202 INFO streaming.PipeMapRed: Records R/W=5462/419601
+2018-09-06 14:45:35,865 INFO mapred.LocalJobRunner: Records R/W=5462/419601 > map
+2018-09-06 14:45:41,865 INFO mapred.LocalJobRunner: Records R/W=5462/419601 > map
+2018-09-06 14:45:43,295 INFO streaming.PipeMapRed: Records R/W=5742/444393
+2018-09-06 14:45:47,866 INFO mapred.LocalJobRunner: Records R/W=5742/444393 > map
+2018-09-06 14:45:53,364 INFO streaming.PipeMapRed: Records R/W=6174/469150
+2018-09-06 14:45:53,867 INFO mapred.LocalJobRunner: Records R/W=6174/469150 > map
+2018-09-06 14:45:59,867 INFO mapred.LocalJobRunner: Records R/W=6174/469150 > map
+2018-09-06 14:46:00,753 INFO mapreduce.Job:  map 4% reduce 0%
+2018-09-06 14:46:03,469 INFO streaming.PipeMapRed: Records R/W=6589/493948
+2018-09-06 14:46:05,868 INFO mapred.LocalJobRunner: Records R/W=6589/493948 > map
+2018-09-06 14:46:11,869 INFO mapred.LocalJobRunner: Records R/W=6589/493948 > map
+2018-09-06 14:46:13,557 INFO streaming.PipeMapRed: Records R/W=6993/518245
+2018-09-06 14:46:17,870 INFO mapred.LocalJobRunner: Records R/W=6993/518245 > map
+2018-09-06 14:46:23,682 INFO streaming.PipeMapRed: Records R/W=7275/542624
+2018-09-06 14:46:23,871 INFO mapred.LocalJobRunner: Records R/W=7275/542624 > map
+2018-09-06 14:46:29,871 INFO mapred.LocalJobRunner: Records R/W=7275/542624 > map
+2018-09-06 14:46:33,750 INFO streaming.PipeMapRed: Records R/W=7702/566902
+2018-09-06 14:46:35,872 INFO mapred.LocalJobRunner: Records R/W=7702/566902 > map
+2018-09-06 14:46:41,873 INFO mapred.LocalJobRunner: Records R/W=7702/566902 > map
+2018-09-06 14:46:43,959 INFO streaming.PipeMapRed: Records R/W=8133/591089
+2018-09-06 14:46:47,874 INFO mapred.LocalJobRunner: Records R/W=8133/591089 > map
+2018-09-06 14:46:53,874 INFO mapred.LocalJobRunner: Records R/W=8133/591089 > map
+2018-09-06 14:46:54,014 INFO streaming.PipeMapRed: Records R/W=8422/615371
+2018-09-06 14:46:54,773 INFO mapreduce.Job:  map 5% reduce 0%
+2018-09-06 14:46:59,875 INFO mapred.LocalJobRunner: Records R/W=8422/615371 > map
+2018-09-06 14:47:04,161 INFO streaming.PipeMapRed: Records R/W=8847/639707
+2018-09-06 14:47:05,876 INFO mapred.LocalJobRunner: Records R/W=8847/639707 > map
+2018-09-06 14:47:11,876 INFO mapred.LocalJobRunner: Records R/W=8847/639707 > map
+2018-09-06 14:47:14,394 INFO streaming.PipeMapRed: Records R/W=9313/662831
+2018-09-06 14:47:17,877 INFO mapred.LocalJobRunner: Records R/W=9313/662831 > map
+2018-09-06 14:47:23,878 INFO mapred.LocalJobRunner: Records R/W=9313/662831 > map
+2018-09-06 14:47:24,524 INFO streaming.PipeMapRed: Records R/W=9615/685981
+2018-09-06 14:47:29,878 INFO mapred.LocalJobRunner: Records R/W=9615/685981 > map
+2018-09-06 14:47:32,900 INFO streaming.PipeMapRed: R/W/S=10000/706008/0 in:32=10000/308 [rec/s] out:2292=706008/308 [rec/s]
+2018-09-06 14:47:34,628 INFO streaming.PipeMapRed: Records R/W=10048/709801
+2018-09-06 14:47:35,879 INFO mapred.LocalJobRunner: Records R/W=10048/709801 > map
+2018-09-06 14:47:41,880 INFO mapred.LocalJobRunner: Records R/W=10048/709801 > map
+2018-09-06 14:47:44,844 INFO streaming.PipeMapRed: Records R/W=10490/734123
+2018-09-06 14:47:47,881 INFO mapred.LocalJobRunner: Records R/W=10490/734123 > map
+2018-09-06 14:47:48,793 INFO mapreduce.Job:  map 6% reduce 0%
+2018-09-06 14:47:53,881 INFO mapred.LocalJobRunner: Records R/W=10490/734123 > map
+2018-09-06 14:47:54,991 INFO streaming.PipeMapRed: Records R/W=10786/757946
+2018-09-06 14:47:59,882 INFO mapred.LocalJobRunner: Records R/W=10786/757946 > map
+2018-09-06 14:48:05,060 INFO streaming.PipeMapRed: Records R/W=11244/781677
+2018-09-06 14:48:05,883 INFO mapred.LocalJobRunner: Records R/W=11244/781677 > map
+2018-09-06 14:48:11,884 INFO mapred.LocalJobRunner: Records R/W=11244/781677 > map
+2018-09-06 14:48:15,087 INFO streaming.PipeMapRed: Records R/W=11687/805589
+2018-09-06 14:48:17,884 INFO mapred.LocalJobRunner: Records R/W=11687/805589 > map
+2018-09-06 14:48:23,885 INFO mapred.LocalJobRunner: Records R/W=11687/805589 > map
+2018-09-06 14:48:25,168 INFO streaming.PipeMapRed: Records R/W=12007/829985
+2018-09-06 14:48:29,886 INFO mapred.LocalJobRunner: Records R/W=12007/829985 > map
+2018-09-06 14:48:35,174 INFO streaming.PipeMapRed: Records R/W=12476/854449
+2018-09-06 14:48:35,887 INFO mapred.LocalJobRunner: Records R/W=12476/854449 > map
+2018-09-06 14:48:41,887 INFO mapred.LocalJobRunner: Records R/W=12476/854449 > map
+2018-09-06 14:48:45,293 INFO streaming.PipeMapRed: Records R/W=12958/878882
+2018-09-06 14:48:47,888 INFO mapred.LocalJobRunner: Records R/W=12958/878882 > map
+2018-09-06 14:48:53,889 INFO mapred.LocalJobRunner: Records R/W=12958/878882 > map
+2018-09-06 14:48:54,816 INFO mapreduce.Job:  map 7% reduce 0%
+2018-09-06 14:48:55,309 INFO streaming.PipeMapRed: Records R/W=13284/902836
+2018-09-06 14:48:59,890 INFO mapred.LocalJobRunner: Records R/W=13284/902836 > map
+2018-09-06 14:49:05,451 INFO streaming.PipeMapRed: Records R/W=13744/926314
+2018-09-06 14:49:05,891 INFO mapred.LocalJobRunner: Records R/W=13744/926314 > map
+2018-09-06 14:49:11,891 INFO mapred.LocalJobRunner: Records R/W=13744/926314 > map
+2018-09-06 14:49:15,640 INFO streaming.PipeMapRed: Records R/W=14241/950269
+2018-09-06 14:49:17,892 INFO mapred.LocalJobRunner: Records R/W=14241/950269 > map
+2018-09-06 14:49:23,893 INFO mapred.LocalJobRunner: Records R/W=14241/950269 > map
+2018-09-06 14:49:25,854 INFO streaming.PipeMapRed: Records R/W=14567/972942
+2018-09-06 14:49:29,893 INFO mapred.LocalJobRunner: Records R/W=14567/972942 > map
+2018-09-06 14:49:35,866 INFO streaming.PipeMapRed: Records R/W=15007/995611
+2018-09-06 14:49:35,894 INFO mapred.LocalJobRunner: Records R/W=15007/995611 > map
+2018-09-06 14:49:41,895 INFO mapred.LocalJobRunner: Records R/W=15007/995611 > map
+2018-09-06 14:49:45,873 INFO streaming.PipeMapRed: Records R/W=15332/1017790
+2018-09-06 14:49:47,895 INFO mapred.LocalJobRunner: Records R/W=15332/1017790 > map
+2018-09-06 14:49:48,835 INFO mapreduce.Job:  map 8% reduce 0%
+2018-09-06 14:49:53,896 INFO mapred.LocalJobRunner: Records R/W=15332/1017790 > map
+2018-09-06 14:49:55,984 INFO streaming.PipeMapRed: Records R/W=15818/1043178
+2018-09-06 14:49:59,897 INFO mapred.LocalJobRunner: Records R/W=15818/1043178 > map
+2018-09-06 14:50:05,897 INFO mapred.LocalJobRunner: Records R/W=15818/1043178 > map
+2018-09-06 14:50:06,002 INFO streaming.PipeMapRed: Records R/W=16309/1069625
+2018-09-06 14:50:11,898 INFO mapred.LocalJobRunner: Records R/W=16309/1069625 > map
+2018-09-06 14:50:16,128 INFO streaming.PipeMapRed: Records R/W=16820/1095673
+2018-09-06 14:50:17,899 INFO mapred.LocalJobRunner: Records R/W=16820/1095673 > map
+2018-09-06 14:50:23,899 INFO mapred.LocalJobRunner: Records R/W=16820/1095673 > map
+2018-09-06 14:50:26,136 INFO streaming.PipeMapRed: Records R/W=17154/1120647
+2018-09-06 14:50:29,900 INFO mapred.LocalJobRunner: Records R/W=17154/1120647 > map
+2018-09-06 14:50:35,901 INFO mapred.LocalJobRunner: Records R/W=17154/1120647 > map
+2018-09-06 14:50:36,202 INFO streaming.PipeMapRed: Records R/W=17647/1141810
+2018-09-06 14:50:41,901 INFO ma
