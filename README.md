@@ -67,3 +67,4 @@ Prediction: 2min 9sec (29997 documents)
 Mapreduce:
 
 Test accuracy: 23244/(23244+6753)  77.84
+Train accuracy: 171158/(171158+43839) 79.6
