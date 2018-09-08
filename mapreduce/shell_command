@@ -20,3 +20,5 @@ hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar \
     -mapper mapper.py \
     -reducer reducer.py \
     -file mapper.py -file reducer.py
+
+hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar -input DBPedia.full/full_test.txt -output output_full_predict -mapper predict_mapper.py -reducer predict_reducer.py -file predict_mapper.py -file predict_reducer.py -file classes.txt -file output/part-00000
