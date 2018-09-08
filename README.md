@@ -66,23 +66,4 @@ Prediction: 2min 9sec (29997 documents)
 
 Mapreduce:
 
-Default:
-start: 2018-09-06 22:04:27,317 INFO mapreduce.Job:  map 100% reduce 0%
-end: 2018-09-06 22:08:10,617 INFO mapreduce.Job:  map 100% reduce 100%
-diff: around 3min 43sec
-
-Reducers = 1
-start: 2018-09-06 22:12:01,909 INFO mapreduce.Job:  map 100% reduce 0%
-end: 2018-09-06 22:16:12,243 INFO mapreduce.Job:  map 100% reduce 100%
-
-2018-09-06 22:14:47,200 INFO mapreduce.Job:  map 100% reduce 0%
-2018-09-06 22:16:12,243 INFO mapreduce.Job:  map 100% reduce 100%
-
-
-Reducers = 2
-2018-09-06 22:34:26,136 INFO mapreduce.Job:  map 100% reduce 0%
-2018-09-06 22:35:54,173 INFO mapreduce.Job:  map 100% reduce 100%
-
-Reducers = 10
-2018-09-06 22:42:29,997 INFO mapreduce.Job:  map 100% reduce 0%
-2018-09-06 22:43:27,021 INFO mapreduce.Job:  map 100% reduce 100%
+Test accuracy: 79.5948717949
