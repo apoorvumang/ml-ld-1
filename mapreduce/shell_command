@@ -1,4 +1,22 @@
 hadoop jar /usr/local/hadoop/share/hadoop/tools/lib/hadoop-streaming-3.0.3.jar -input data_verysmall -output output_dir_2 -mapper ./mapper.py -reducer ./reducer.py
 
 
-hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar -mapper ./mapper.py -reducer ./reducer.py -output x -input y
+hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar -mapper ./mapper.py -reducer ./reducer.py -output x -input input
+
+hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar -mapper hdfs:///user/apoorvumang/mapper.py -reducer hdfs:///user/apoorvumang/reducer.py -output output -input input
+
+
+hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar \
+  -input input \
+  -output output \
+  -mapper /user/apoorvumang/mapper.py \
+  -reducer /user/apoorvumang/reducer.py \
+  -files mapper.py, reducer.py
+
+
+  hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar \
+    -input input \
+    -output output \
+    -mapper mapper.py \
+    -reducer reducer.py \
+    -file mapper.py -file reducer.py
