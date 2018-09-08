@@ -2,7 +2,7 @@
 import re
 import sys
 from collections import Counter
-COUNTS_FILE_NAME = "output/part-00000"
+COUNTS_FILE_NAME = "part-00000"
 CLASSES_LIST_FILE_NAME = "classes.txt"
 ALPHA = 0.1
 VOCABULARY_SIZE = 300000
