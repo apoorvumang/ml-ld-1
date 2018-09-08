@@ -103,14 +103,11 @@ for line in sys.stdin:
             pClass = testClass
     numDone += 1
     if pClass in documentsGroundTruthClass:
-        # print "%s\t%s" % ("Correct", 1)
+        print "%s\t%s" % ("Correct", 1)
         numCorrect += 1
     else:
-        # print "%s\t%s" % ("Wrong", 1)
+        print "%s\t%s" % ("Wrong", 1)
         numWrong += 1
-
-    if (numDone % 500 == 0):
-        print 100.0*numCorrect/(numCorrect + numWrong)
 
     # for myword in words:
     #     for myclass in classes:
