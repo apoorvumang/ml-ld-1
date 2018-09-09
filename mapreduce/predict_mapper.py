@@ -2,6 +2,10 @@
 import re
 import sys
 from collections import Counter
+importer = zipimport.zipimporter('nltk.zip')
+nltk = importer.load_module('nltk')
+from nltk.stem.snowball import SnowballStemmer
+stemmer = SnowballStemmer('english')
 COUNTS_FILE_NAME = "part-00000"
 CLASSES_LIST_FILE_NAME = "classes.txt"
 ALPHA = 0.1
@@ -76,7 +80,11 @@ for line in sys.stdin:
     document = denoise_text(document)
     words = document.split()
     words = to_lowercase(words)
-    words = list(set(words)) #only need 1 occurence
+    new_words = []
+    for word in words:
+        new_words.append(stemmer.stem(word))
+    words = list(set(new_words)) #only need 1 occurence
+
     bestP = 0.0
     pClass = 'Articles_containing_video_clips'
     for testClass in documentClasses:
