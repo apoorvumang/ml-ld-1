@@ -46,6 +46,7 @@ Test set: ALPHA = 0.1 23532 (78.44)
 Parameters:
 Words: 211577
 Classes: 50
+Class distribution for each class
 Smoothing factor (ALPHA): 0.1
 
 
@@ -70,6 +71,10 @@ Test accuracy: 23244/(23244+6753)  77.84
 Train accuracy: 171158/(171158+43839) 79.6
 Development accuracy: 45287/(45287+16210) 73.6
 
+With stemming and stopwords:
+Test accuracy: 24032/(24032+5965) 80.11
+Train accuracy: 183527/(183527+31470) 85.36
+Development accuracy: 47415/(47415+14082) 77.10
 
 Timings:
 reducers = 1
