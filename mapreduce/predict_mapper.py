@@ -6,6 +6,8 @@ import zipimport
 importer = zipimport.zipimporter('nltk.zip')
 nltk = importer.load_module('nltk')
 from nltk.stem.snowball import SnowballStemmer
+from nltk.corpus import stopwords
+stop_words = stopwords.words('english')
 stemmer = SnowballStemmer('english')
 COUNTS_FILE_NAME = "output_full_stemmed.txt"
 CLASSES_LIST_FILE_NAME = "classes.txt"
@@ -83,6 +85,8 @@ for line in sys.stdin:
     words = to_lowercase(words)
     new_words = []
     for word in words:
+        if word in stop_words:
+            continue
         new_words.append(stemmer.stem(word))
     words = list(set(new_words)) #only need 1 occurence
 
