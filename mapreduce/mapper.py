@@ -2,6 +2,11 @@
 import re
 import sys
 from collections import Counter
+import zipimport
+importer = zipimport.zipimporter('nltk.zip')
+nltk = importer.load_module('nltk')
+from nltk.stem.snowball import SnowballStemmer
+stemmer = SnowballStemmer('english')
 
 def remove_till_first_quote(text):
     regex = r"^(.*?)\""
@@ -44,6 +49,8 @@ for line in sys.stdin:
     document = denoise_text(document)
     words = document.split()
     words = to_lowercase(words)
+    new_words = []
     for myword in words:
+        myword = stemmer.stem(myword)
         for myclass in classes:
             print '%s,%s\t%s' % (myword, myclass, 1)
