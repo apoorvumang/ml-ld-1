@@ -6,9 +6,8 @@ import zipimport
 importer = zipimport.zipimporter('nltk.zip')
 nltk = importer.load_module('nltk')
 from nltk.stem.snowball import SnowballStemmer
-from nltk.corpus import stopwords
-stop_words = stopwords.words('english')
 stemmer = SnowballStemmer('english')
+STOPWORDS_FILE_NAME = "stopwords.txt"
 
 def remove_till_first_quote(text):
     regex = r"^(.*?)\""
@@ -41,6 +40,14 @@ def remove_punctuation(text):
     return text
 
 
+stopwords = []
+f = open(STOPWORDS_FILE_NAME, "r")
+for line in f.readlines():
+    line = line.strip()
+    if(line):
+        stopwords.append(line)
+f.close()
+
 for line in sys.stdin:
     line = line.strip()
     splitLine = line.split('\t', 2)
@@ -53,7 +60,7 @@ for line in sys.stdin:
     words = to_lowercase(words)
     new_words = []
     for myword in words:
-        if myword in stop_words:
+        if myword in stopwords:
             continue
         myword = stemmer.stem(myword)
         for myclass in classes:
