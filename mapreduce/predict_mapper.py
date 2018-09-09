@@ -7,7 +7,7 @@ importer = zipimport.zipimporter('nltk.zip')
 nltk = importer.load_module('nltk')
 from nltk.stem.snowball import SnowballStemmer
 stemmer = SnowballStemmer('english')
-COUNTS_FILE_NAME = "output_full_stemmed.txt"
+COUNTS_FILE_NAME = "output_full_stemmed_stopwords.txt"
 CLASSES_LIST_FILE_NAME = "classes.txt"
 STOPWORDS_FILE_NAME = "stopwords.txt"
 ALPHA = 0.1
