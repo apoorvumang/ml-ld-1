@@ -37,14 +37,6 @@ def remove_punctuation(text):
     text = re.sub(r'[^\w\s]', ' ', text)
     return text
 
-
-def convert_unicode_to_string(words):
-    new_words = []
-    for word in words:
-        new_words.append(word.encode('ascii','ignore'))
-    return new_words
-
-
 f = open(COUNTS_FILE_NAME, "r")
 table = {}
 wordsInClass = {}

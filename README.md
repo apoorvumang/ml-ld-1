@@ -68,3 +68,31 @@ Mapreduce:
 
 Test accuracy: 23244/(23244+6753)  77.84
 Train accuracy: 171158/(171158+43839) 79.6
+Development accuracy: 45287/(45287+16210) 73.6
+
+
+Timings:
+reducers = 1
+18/09/09 17:55:56 INFO mapreduce.Job:  map 100% reduce 0%
+18/09/09 17:56:58 INFO mapreduce.Job:  map 100% reduce 100%
+62 seconds
+
+reducers = 2
+18/09/08 14:30:17 INFO mapreduce.Job:  map 100% reduce 0%
+18/09/08 14:30:57 INFO mapreduce.Job:  map 100% reduce 100%
+40 seconds
+
+reducers = 5
+18/09/08 14:26:02 INFO mapreduce.Job:  map 100% reduce 0%
+18/09/08 14:26:20 INFO mapreduce.Job:  map 100% reduce 100%
+18 seconds
+
+reducers = 8
+18/09/09 18:47:59 INFO mapreduce.Job:  map 100% reduce 0%
+18/09/09 18:48:13 INFO mapreduce.Job:  map 100% reduce 100%
+14 seconds
+
+reducers = 10
+18/09/08 14:23:19 INFO mapreduce.Job:  map 100% reduce 0%
+18/09/08 14:23:31 INFO mapreduce.Job:  map 100% reduce 100%
+12 seconds

@@ -34,14 +34,6 @@ def remove_punctuation(text):
     return text
 
 
-def convert_unicode_to_string(words):
-    new_words = []
-    for word in words:
-        new_words.append(word.encode('ascii','ignore'))
-    return new_words
-
-
-
 for line in sys.stdin:
     line = line.strip()
     splitLine = line.split('\t', 2)
