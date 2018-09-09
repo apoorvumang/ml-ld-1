@@ -1,8 +1,9 @@
 # ml-ld-1
 Assignment 1 for ML-LD course
 
+Please see the included report for details.
 
-Very small dataset:
+<!-- Very small dataset:
 Local:
 
 
@@ -10,7 +11,7 @@ Stemming - ALPHA = 0.01
 Training set: 8370/10497
 Test set: 780/1497
 Devel: 1730/2997
-
+ -->
 <!-- Lemming - ALPHA = 0.01
 Training set: 8213/10500
 Test set: 773/1500
@@ -21,7 +22,7 @@ Lemming - ALPHA = 0.01 - With class distribution
 Training set: 8238/10500
 Test set: 782/1500
 Devel: 1694/3000 -->
-
+<!--
 Stemming - ALPHA = 0.01 - With class distribution
 Training set: 8403/10500
 Test set: 778/1500 (785 with ALPHA 0.1, 787 with 0.1 and no class distribution)
@@ -100,4 +101,4 @@ reducers = 8
 reducers = 10
 18/09/08 14:23:19 INFO mapreduce.Job:  map 100% reduce 0%
 18/09/08 14:23:31 INFO mapreduce.Job:  map 100% reduce 100%
-12 seconds
+12 seconds -->
